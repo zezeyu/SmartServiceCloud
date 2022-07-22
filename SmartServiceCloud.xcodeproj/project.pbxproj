@@ -1,0 +1,1055 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DABF4EEAB24264B75B4CB9D /* Pods_SmartServiceCloud_SmartServiceCloudUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444E928B0D7CF39C2D543AFF /* Pods_SmartServiceCloud_SmartServiceCloudUITests.framework */; };
+		757E40B64157311EAECBE0B7 /* Pods_SmartServiceCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E088BE5BECBE3475116803 /* Pods_SmartServiceCloud.framework */; };
+		A57404761C42E5E7D9111279 /* Pods_SmartServiceCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB25C5238FCC8AA438164DF4 /* Pods_SmartServiceCloudTests.framework */; };
+		E135B489288A4A4200BAB6D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B488288A4A4200BAB6D9 /* AppDelegate.m */; };
+		E135B492288A4A4200BAB6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E135B490288A4A4200BAB6D9 /* Main.storyboard */; };
+		E135B494288A4A4300BAB6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E135B493288A4A4300BAB6D9 /* Assets.xcassets */; };
+		E135B497288A4A4300BAB6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E135B495288A4A4300BAB6D9 /* LaunchScreen.storyboard */; };
+		E135B49A288A4A4300BAB6D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B499288A4A4300BAB6D9 /* main.m */; };
+		E135B4A4288A4A4300BAB6D9 /* SmartServiceCloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B4A3288A4A4300BAB6D9 /* SmartServiceCloudTests.m */; };
+		E135B4AE288A4A4300BAB6D9 /* SmartServiceCloudUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B4AD288A4A4300BAB6D9 /* SmartServiceCloudUITests.m */; };
+		E135B4B0288A4A4300BAB6D9 /* SmartServiceCloudUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B4AF288A4A4300BAB6D9 /* SmartServiceCloudUITestsLaunchTests.m */; };
+		E135B5BC288A68E700BAB6D9 /* JSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B57C288A68E700BAB6D9 /* JSONUtil.m */; };
+		E135B5BD288A68E700BAB6D9 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B584288A68E700BAB6D9 /* UIViewController+Utils.m */; };
+		E135B5BE288A68E700BAB6D9 /* UIViewController+Global.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B585288A68E700BAB6D9 /* UIViewController+Global.m */; };
+		E135B5BF288A68E700BAB6D9 /* HZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B586288A68E700BAB6D9 /* HZFileManager.m */; };
+		E135B5C0288A68E700BAB6D9 /* MBProgressHUD+SAKURA.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B58A288A68E700BAB6D9 /* MBProgressHUD+SAKURA.m */; };
+		E135B5C1288A68E700BAB6D9 /* QMUIAlertController+HZAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B58B288A68E700BAB6D9 /* QMUIAlertController+HZAlertController.m */; };
+		E135B5C2288A68E700BAB6D9 /* UIView+HZUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B58C288A68E700BAB6D9 /* UIView+HZUtil.m */; };
+		E135B5C3288A68E700BAB6D9 /* QMUIButton+HZUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B58D288A68E700BAB6D9 /* QMUIButton+HZUtil.m */; };
+		E135B5C4288A68E700BAB6D9 /* HZUserDefaultUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B58E288A68E700BAB6D9 /* HZUserDefaultUtil.m */; };
+		E135B5C7288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B598288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m */; };
+		E135B5C8288A68E700BAB6D9 /* QDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B59A288A68E700BAB6D9 /* QDThemeManager.m */; };
+		E135B5C9288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B59B288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m */; };
+		E135B5CA288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B59D288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m */; };
+		E135B5CB288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A0288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m */; };
+		E135B5CC288A68E700BAB6D9 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A3288A68E700BAB6D9 /* QMUIConfigurationTemplate.m */; };
+		E135B5CD288A68E700BAB6D9 /* QDUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A7288A68E700BAB6D9 /* QDUIHelper.m */; };
+		E135B5CE288A68E700BAB6D9 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A8288A68E700BAB6D9 /* UIImageEffects.m */; };
+		E135B5CF288A68E700BAB6D9 /* QDCommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A9288A68E700BAB6D9 /* QDCommonUI.m */; };
+		E135B5D0288A68E700BAB6D9 /* QDCommonGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5AC288A68E700BAB6D9 /* QDCommonGroupListViewController.m */; };
+		E135B5D1288A68E700BAB6D9 /* QDCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5AF288A68E700BAB6D9 /* QDCommonViewController.m */; };
+		E135B5D2288A68E700BAB6D9 /* QDCommonGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B2288A68E700BAB6D9 /* QDCommonGridViewController.m */; };
+		E135B5D3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m */; };
+		E135B5D4288A68E700BAB6D9 /* QDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B4288A68E700BAB6D9 /* QDTabBarViewController.m */; };
+		E135B5D5288A68E700BAB6D9 /* QDCommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B6288A68E700BAB6D9 /* QDCommonListViewController.m */; };
+		E135B5D6288A68E700BAB6D9 /* QDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B9288A68E700BAB6D9 /* QDNavigationController.m */; };
+		E135B5D7288A68E700BAB6D9 /* QDCommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5BA288A68E700BAB6D9 /* QDCommonTableViewController.m */; };
+		E135B5DB288A6C2900BAB6D9 /* AppDelegate+launchOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5DA288A6C2900BAB6D9 /* AppDelegate+launchOptions.m */; };
+		E135B5E2288A783C00BAB6D9 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5E1288A783C00BAB6D9 /* MainTabBarVC.m */; };
+		E135B5EE288A7A0B00BAB6D9 /* HZMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5ED288A7A0B00BAB6D9 /* HZMineVC.m */; };
+		E135B5F1288A7A2200BAB6D9 /* HZHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5F0288A7A2200BAB6D9 /* HZHomeVC.m */; };
+		E135B5F4288A7D9F00BAB6D9 /* HZTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5F3288A7D9F00BAB6D9 /* HZTestVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E135B4A0288A4A4300BAB6D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E135B47C288A4A4200BAB6D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E135B483288A4A4200BAB6D9;
+			remoteInfo = SmartServiceCloud;
+		};
+		E135B4AA288A4A4300BAB6D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E135B47C288A4A4200BAB6D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E135B483288A4A4200BAB6D9;
+			remoteInfo = SmartServiceCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38E1D89742BDE8700E11539B /* Pods-SmartServiceCloudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloudTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloudTests/Pods-SmartServiceCloudTests.debug.xcconfig"; sourceTree = "<group>"; };
+		444E928B0D7CF39C2D543AFF /* Pods_SmartServiceCloud_SmartServiceCloudUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartServiceCloud_SmartServiceCloudUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		503FFFECDDDF101D6CA19661 /* Pods-SmartServiceCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloud.release.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloud/Pods-SmartServiceCloud.release.xcconfig"; sourceTree = "<group>"; };
+		83EEA5D898B9FB1930F9648A /* Pods-SmartServiceCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloudTests.release.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloudTests/Pods-SmartServiceCloudTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DC755EEB7080CEE85843CB8 /* Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloud-SmartServiceCloudUITests/Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB25C5238FCC8AA438164DF4 /* Pods_SmartServiceCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartServiceCloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADBE29DA76FB3FF62BEB354 /* Pods-SmartServiceCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloud.debug.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloud/Pods-SmartServiceCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		E135B484288A4A4200BAB6D9 /* SmartServiceCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartServiceCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E135B487288A4A4200BAB6D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E135B488288A4A4200BAB6D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E135B491288A4A4200BAB6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E135B493288A4A4300BAB6D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E135B496288A4A4300BAB6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E135B498288A4A4300BAB6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E135B499288A4A4300BAB6D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E135B49F288A4A4300BAB6D9 /* SmartServiceCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartServiceCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E135B4A3288A4A4300BAB6D9 /* SmartServiceCloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartServiceCloudTests.m; sourceTree = "<group>"; };
+		E135B4A9288A4A4300BAB6D9 /* SmartServiceCloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartServiceCloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E135B4AD288A4A4300BAB6D9 /* SmartServiceCloudUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartServiceCloudUITests.m; sourceTree = "<group>"; };
+		E135B4AF288A4A4300BAB6D9 /* SmartServiceCloudUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartServiceCloudUITestsLaunchTests.m; sourceTree = "<group>"; };
+		E135B574288A68E700BAB6D9 /* HZCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZCommonMacros.h; sourceTree = "<group>"; };
+		E135B575288A68E700BAB6D9 /* HZNotificationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZNotificationDefine.h; sourceTree = "<group>"; };
+		E135B576288A68E700BAB6D9 /* HZAppScreenDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZAppScreenDefines.h; sourceTree = "<group>"; };
+		E135B577288A68E700BAB6D9 /* HZActionURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZActionURL.h; sourceTree = "<group>"; };
+		E135B578288A68E700BAB6D9 /* weakify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weakify.h; sourceTree = "<group>"; };
+		E135B579288A68E700BAB6D9 /* stringify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringify.h; sourceTree = "<group>"; };
+		E135B57B288A68E700BAB6D9 /* HZFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZFileManager.h; sourceTree = "<group>"; };
+		E135B57C288A68E700BAB6D9 /* JSONUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONUtil.m; sourceTree = "<group>"; };
+		E135B57D288A68E700BAB6D9 /* QMUIAlertController+HZAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QMUIAlertController+HZAlertController.h"; sourceTree = "<group>"; };
+		E135B57E288A68E700BAB6D9 /* HZUserDefaultUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZUserDefaultUtil.h; sourceTree = "<group>"; };
+		E135B57F288A68E700BAB6D9 /* QMUIButton+HZUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QMUIButton+HZUtil.h"; sourceTree = "<group>"; };
+		E135B580288A68E700BAB6D9 /* UIView+HZUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HZUtil.h"; sourceTree = "<group>"; };
+		E135B582288A68E700BAB6D9 /* UIViewController+Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Global.h"; sourceTree = "<group>"; };
+		E135B583288A68E700BAB6D9 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		E135B584288A68E700BAB6D9 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		E135B585288A68E700BAB6D9 /* UIViewController+Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Global.m"; sourceTree = "<group>"; };
+		E135B586288A68E700BAB6D9 /* HZFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZFileManager.m; sourceTree = "<group>"; };
+		E135B587288A68E700BAB6D9 /* JSONUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONUtil.h; sourceTree = "<group>"; };
+		E135B589288A68E700BAB6D9 /* MBProgressHUD+SAKURA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+SAKURA.h"; sourceTree = "<group>"; };
+		E135B58A288A68E700BAB6D9 /* MBProgressHUD+SAKURA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+SAKURA.m"; sourceTree = "<group>"; };
+		E135B58B288A68E700BAB6D9 /* QMUIAlertController+HZAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUIAlertController+HZAlertController.m"; sourceTree = "<group>"; };
+		E135B58C288A68E700BAB6D9 /* UIView+HZUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HZUtil.m"; sourceTree = "<group>"; };
+		E135B58D288A68E700BAB6D9 /* QMUIButton+HZUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUIButton+HZUtil.m"; sourceTree = "<group>"; };
+		E135B58E288A68E700BAB6D9 /* HZUserDefaultUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZUserDefaultUtil.m; sourceTree = "<group>"; };
+		E135B58F288A68E700BAB6D9 /* SmartServiceCloud.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartServiceCloud.pch; sourceTree = "<group>"; };
+		E135B597288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateGrass.h; sourceTree = "<group>"; };
+		E135B598288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateDark.m; sourceTree = "<group>"; };
+		E135B599288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateGrapefruit.h; sourceTree = "<group>"; };
+		E135B59A288A68E700BAB6D9 /* QDThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDThemeManager.m; sourceTree = "<group>"; };
+		E135B59B288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplatePinkRose.m; sourceTree = "<group>"; };
+		E135B59C288A68E700BAB6D9 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
+		E135B59D288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateGrass.m; sourceTree = "<group>"; };
+		E135B59E288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateDark.h; sourceTree = "<group>"; };
+		E135B59F288A68E700BAB6D9 /* QDThemeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDThemeProtocol.h; sourceTree = "<group>"; };
+		E135B5A0288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateGrapefruit.m; sourceTree = "<group>"; };
+		E135B5A1288A68E700BAB6D9 /* QDThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDThemeManager.h; sourceTree = "<group>"; };
+		E135B5A2288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplatePinkRose.h; sourceTree = "<group>"; };
+		E135B5A3288A68E700BAB6D9 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
+		E135B5A5288A68E700BAB6D9 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		E135B5A6288A68E700BAB6D9 /* QDCommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonUI.h; sourceTree = "<group>"; };
+		E135B5A7288A68E700BAB6D9 /* QDUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIHelper.m; sourceTree = "<group>"; };
+		E135B5A8288A68E700BAB6D9 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		E135B5A9288A68E700BAB6D9 /* QDCommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonUI.m; sourceTree = "<group>"; };
+		E135B5AA288A68E700BAB6D9 /* QDUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIHelper.h; sourceTree = "<group>"; };
+		E135B5AC288A68E700BAB6D9 /* QDCommonGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGroupListViewController.m; sourceTree = "<group>"; };
+		E135B5AD288A68E700BAB6D9 /* QDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarViewController.h; sourceTree = "<group>"; };
+		E135B5AE288A68E700BAB6D9 /* QDCommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonListViewController.h; sourceTree = "<group>"; };
+		E135B5AF288A68E700BAB6D9 /* QDCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonViewController.m; sourceTree = "<group>"; };
+		E135B5B0288A68E700BAB6D9 /* QDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationController.h; sourceTree = "<group>"; };
+		E135B5B1288A68E700BAB6D9 /* QDCommonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonTableViewController.h; sourceTree = "<group>"; };
+		E135B5B2288A68E700BAB6D9 /* QDCommonGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGridViewController.m; sourceTree = "<group>"; };
+		E135B5B3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDStyleSelectableTableViewController.m; sourceTree = "<group>"; };
+		E135B5B4288A68E700BAB6D9 /* QDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarViewController.m; sourceTree = "<group>"; };
+		E135B5B5288A68E700BAB6D9 /* QDCommonGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGroupListViewController.h; sourceTree = "<group>"; };
+		E135B5B6288A68E700BAB6D9 /* QDCommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonListViewController.m; sourceTree = "<group>"; };
+		E135B5B7288A68E700BAB6D9 /* QDCommonGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGridViewController.h; sourceTree = "<group>"; };
+		E135B5B8288A68E700BAB6D9 /* QDCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonViewController.h; sourceTree = "<group>"; };
+		E135B5B9288A68E700BAB6D9 /* QDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationController.m; sourceTree = "<group>"; };
+		E135B5BA288A68E700BAB6D9 /* QDCommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonTableViewController.m; sourceTree = "<group>"; };
+		E135B5BB288A68E700BAB6D9 /* QDStyleSelectableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDStyleSelectableTableViewController.h; sourceTree = "<group>"; };
+		E135B5D9288A6C2900BAB6D9 /* AppDelegate+launchOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+launchOptions.h"; sourceTree = "<group>"; };
+		E135B5DA288A6C2900BAB6D9 /* AppDelegate+launchOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+launchOptions.m"; sourceTree = "<group>"; };
+		E135B5E0288A783C00BAB6D9 /* MainTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarVC.h; sourceTree = "<group>"; };
+		E135B5E1288A783C00BAB6D9 /* MainTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarVC.m; sourceTree = "<group>"; };
+		E135B5EC288A7A0B00BAB6D9 /* HZMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZMineVC.h; sourceTree = "<group>"; };
+		E135B5ED288A7A0B00BAB6D9 /* HZMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMineVC.m; sourceTree = "<group>"; };
+		E135B5EF288A7A2200BAB6D9 /* HZHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZHomeVC.h; sourceTree = "<group>"; };
+		E135B5F0288A7A2200BAB6D9 /* HZHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZHomeVC.m; sourceTree = "<group>"; };
+		E135B5F2288A7D9F00BAB6D9 /* HZTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTestVC.h; sourceTree = "<group>"; };
+		E135B5F3288A7D9F00BAB6D9 /* HZTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTestVC.m; sourceTree = "<group>"; };
+		E1E088BE5BECBE3475116803 /* Pods_SmartServiceCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartServiceCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E217897395083EFCB6295E6E /* Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloud-SmartServiceCloudUITests/Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E135B481288A4A4200BAB6D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757E40B64157311EAECBE0B7 /* Pods_SmartServiceCloud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E135B49C288A4A4300BAB6D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57404761C42E5E7D9111279 /* Pods_SmartServiceCloudTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E135B4A6288A4A4300BAB6D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DABF4EEAB24264B75B4CB9D /* Pods_SmartServiceCloud_SmartServiceCloudUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53A5E317942016F8A97433B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CADBE29DA76FB3FF62BEB354 /* Pods-SmartServiceCloud.debug.xcconfig */,
+				503FFFECDDDF101D6CA19661 /* Pods-SmartServiceCloud.release.xcconfig */,
+				E217897395083EFCB6295E6E /* Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig */,
+				9DC755EEB7080CEE85843CB8 /* Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig */,
+				38E1D89742BDE8700E11539B /* Pods-SmartServiceCloudTests.debug.xcconfig */,
+				83EEA5D898B9FB1930F9648A /* Pods-SmartServiceCloudTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F619132F9FF338F48439C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1E088BE5BECBE3475116803 /* Pods_SmartServiceCloud.framework */,
+				444E928B0D7CF39C2D543AFF /* Pods_SmartServiceCloud_SmartServiceCloudUITests.framework */,
+				BB25C5238FCC8AA438164DF4 /* Pods_SmartServiceCloudTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E135B47B288A4A4200BAB6D9 = {
+			isa = PBXGroup;
+			children = (
+				E135B486288A4A4200BAB6D9 /* SmartServiceCloud */,
+				E135B4A2288A4A4300BAB6D9 /* SmartServiceCloudTests */,
+				E135B4AC288A4A4300BAB6D9 /* SmartServiceCloudUITests */,
+				E135B485288A4A4200BAB6D9 /* Products */,
+				53A5E317942016F8A97433B6 /* Pods */,
+				9F619132F9FF338F48439C6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E135B485288A4A4200BAB6D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E135B484288A4A4200BAB6D9 /* SmartServiceCloud.app */,
+				E135B49F288A4A4300BAB6D9 /* SmartServiceCloudTests.xctest */,
+				E135B4A9288A4A4300BAB6D9 /* SmartServiceCloudUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E135B486288A4A4200BAB6D9 /* SmartServiceCloud */ = {
+			isa = PBXGroup;
+			children = (
+				E135B5DF288A782400BAB6D9 /* Main */,
+				E135B595288A68E700BAB6D9 /* Common */,
+				E135B573288A68E700BAB6D9 /* Macros */,
+				E135B58F288A68E700BAB6D9 /* SmartServiceCloud.pch */,
+				E135B57A288A68E700BAB6D9 /* Utils */,
+				E135B5E3288A788E00BAB6D9 /* ViewControllers */,
+				E135B487288A4A4200BAB6D9 /* AppDelegate.h */,
+				E135B488288A4A4200BAB6D9 /* AppDelegate.m */,
+				E135B5D9288A6C2900BAB6D9 /* AppDelegate+launchOptions.h */,
+				E135B5DA288A6C2900BAB6D9 /* AppDelegate+launchOptions.m */,
+				E135B490288A4A4200BAB6D9 /* Main.storyboard */,
+				E135B493288A4A4300BAB6D9 /* Assets.xcassets */,
+				E135B495288A4A4300BAB6D9 /* LaunchScreen.storyboard */,
+				E135B498288A4A4300BAB6D9 /* Info.plist */,
+				E135B499288A4A4300BAB6D9 /* main.m */,
+			);
+			path = SmartServiceCloud;
+			sourceTree = "<group>";
+		};
+		E135B4A2288A4A4300BAB6D9 /* SmartServiceCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				E135B4A3288A4A4300BAB6D9 /* SmartServiceCloudTests.m */,
+			);
+			path = SmartServiceCloudTests;
+			sourceTree = "<group>";
+		};
+		E135B4AC288A4A4300BAB6D9 /* SmartServiceCloudUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E135B4AD288A4A4300BAB6D9 /* SmartServiceCloudUITests.m */,
+				E135B4AF288A4A4300BAB6D9 /* SmartServiceCloudUITestsLaunchTests.m */,
+			);
+			path = SmartServiceCloudUITests;
+			sourceTree = "<group>";
+		};
+		E135B573288A68E700BAB6D9 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				E135B574288A68E700BAB6D9 /* HZCommonMacros.h */,
+				E135B575288A68E700BAB6D9 /* HZNotificationDefine.h */,
+				E135B576288A68E700BAB6D9 /* HZAppScreenDefines.h */,
+				E135B577288A68E700BAB6D9 /* HZActionURL.h */,
+				E135B578288A68E700BAB6D9 /* weakify.h */,
+				E135B579288A68E700BAB6D9 /* stringify.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		E135B57A288A68E700BAB6D9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E135B57B288A68E700BAB6D9 /* HZFileManager.h */,
+				E135B57C288A68E700BAB6D9 /* JSONUtil.m */,
+				E135B57D288A68E700BAB6D9 /* QMUIAlertController+HZAlertController.h */,
+				E135B57E288A68E700BAB6D9 /* HZUserDefaultUtil.h */,
+				E135B57F288A68E700BAB6D9 /* QMUIButton+HZUtil.h */,
+				E135B580288A68E700BAB6D9 /* UIView+HZUtil.h */,
+				E135B581288A68E700BAB6D9 /* UIViewController */,
+				E135B586288A68E700BAB6D9 /* HZFileManager.m */,
+				E135B587288A68E700BAB6D9 /* JSONUtil.h */,
+				E135B588288A68E700BAB6D9 /* MBProgressHUD */,
+				E135B58B288A68E700BAB6D9 /* QMUIAlertController+HZAlertController.m */,
+				E135B58C288A68E700BAB6D9 /* UIView+HZUtil.m */,
+				E135B58D288A68E700BAB6D9 /* QMUIButton+HZUtil.m */,
+				E135B58E288A68E700BAB6D9 /* HZUserDefaultUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E135B581288A68E700BAB6D9 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E135B582288A68E700BAB6D9 /* UIViewController+Global.h */,
+				E135B583288A68E700BAB6D9 /* UIViewController+Utils.h */,
+				E135B584288A68E700BAB6D9 /* UIViewController+Utils.m */,
+				E135B585288A68E700BAB6D9 /* UIViewController+Global.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		E135B588288A68E700BAB6D9 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E135B589288A68E700BAB6D9 /* MBProgressHUD+SAKURA.h */,
+				E135B58A288A68E700BAB6D9 /* MBProgressHUD+SAKURA.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E135B595288A68E700BAB6D9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E135B596288A68E700BAB6D9 /* Configuration */,
+				E135B5A4288A68E700BAB6D9 /* Utils */,
+				E135B5AB288A68E700BAB6D9 /* Controllers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E135B596288A68E700BAB6D9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E135B598288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m */,
+				E135B59E288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.h */,
+				E135B5A2288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.h */,
+				E135B59B288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m */,
+				E135B59C288A68E700BAB6D9 /* QMUIConfigurationTemplate.h */,
+				E135B5A3288A68E700BAB6D9 /* QMUIConfigurationTemplate.m */,
+				E135B597288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.h */,
+				E135B59D288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m */,
+				E135B59F288A68E700BAB6D9 /* QDThemeProtocol.h */,
+				E135B5A1288A68E700BAB6D9 /* QDThemeManager.h */,
+				E135B59A288A68E700BAB6D9 /* QDThemeManager.m */,
+				E135B599288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.h */,
+				E135B5A0288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E135B5A4288A68E700BAB6D9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E135B5A6288A68E700BAB6D9 /* QDCommonUI.h */,
+				E135B5A9288A68E700BAB6D9 /* QDCommonUI.m */,
+				E135B5AA288A68E700BAB6D9 /* QDUIHelper.h */,
+				E135B5A7288A68E700BAB6D9 /* QDUIHelper.m */,
+				E135B5A5288A68E700BAB6D9 /* UIImageEffects.h */,
+				E135B5A8288A68E700BAB6D9 /* UIImageEffects.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E135B5AB288A68E700BAB6D9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E135B5AD288A68E700BAB6D9 /* QDTabBarViewController.h */,
+				E135B5B4288A68E700BAB6D9 /* QDTabBarViewController.m */,
+				E135B5AE288A68E700BAB6D9 /* QDCommonListViewController.h */,
+				E135B5B6288A68E700BAB6D9 /* QDCommonListViewController.m */,
+				E135B5B0288A68E700BAB6D9 /* QDNavigationController.h */,
+				E135B5B9288A68E700BAB6D9 /* QDNavigationController.m */,
+				E135B5B1288A68E700BAB6D9 /* QDCommonTableViewController.h */,
+				E135B5BA288A68E700BAB6D9 /* QDCommonTableViewController.m */,
+				E135B5BB288A68E700BAB6D9 /* QDStyleSelectableTableViewController.h */,
+				E135B5B3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m */,
+				E135B5B5288A68E700BAB6D9 /* QDCommonGroupListViewController.h */,
+				E135B5AC288A68E700BAB6D9 /* QDCommonGroupListViewController.m */,
+				E135B5B7288A68E700BAB6D9 /* QDCommonGridViewController.h */,
+				E135B5B2288A68E700BAB6D9 /* QDCommonGridViewController.m */,
+				E135B5B8288A68E700BAB6D9 /* QDCommonViewController.h */,
+				E135B5AF288A68E700BAB6D9 /* QDCommonViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E135B5DF288A782400BAB6D9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E135B5E0288A783C00BAB6D9 /* MainTabBarVC.h */,
+				E135B5E1288A783C00BAB6D9 /* MainTabBarVC.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E135B5E3288A788E00BAB6D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E135B5E7288A79F600BAB6D9 /* Home(首页) */,
+				E135B5EA288A79F600BAB6D9 /* Mine(个人中心) */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E135B5E7288A79F600BAB6D9 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				E135B5EF288A7A2200BAB6D9 /* HZHomeVC.h */,
+				E135B5F0288A7A2200BAB6D9 /* HZHomeVC.m */,
+				E135B5F2288A7D9F00BAB6D9 /* HZTestVC.h */,
+				E135B5F3288A7D9F00BAB6D9 /* HZTestVC.m */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		E135B5EA288A79F600BAB6D9 /* Mine(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+				E135B5EC288A7A0B00BAB6D9 /* HZMineVC.h */,
+				E135B5ED288A7A0B00BAB6D9 /* HZMineVC.m */,
+			);
+			path = "Mine(个人中心)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E135B483288A4A4200BAB6D9 /* SmartServiceCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E135B4B3288A4A4300BAB6D9 /* Build configuration list for PBXNativeTarget "SmartServiceCloud" */;
+			buildPhases = (
+				E9487306E098C2ADB9CF3524 /* [CP] Check Pods Manifest.lock */,
+				E135B480288A4A4200BAB6D9 /* Sources */,
+				E135B481288A4A4200BAB6D9 /* Frameworks */,
+				E135B482288A4A4200BAB6D9 /* Resources */,
+				8028D359D4AC264E0ED1B8A8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartServiceCloud;
+			productName = SmartServiceCloud;
+			productReference = E135B484288A4A4200BAB6D9 /* SmartServiceCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E135B49E288A4A4300BAB6D9 /* SmartServiceCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E135B4B6288A4A4300BAB6D9 /* Build configuration list for PBXNativeTarget "SmartServiceCloudTests" */;
+			buildPhases = (
+				DE06F00F6B1E0F4B7D277D36 /* [CP] Check Pods Manifest.lock */,
+				E135B49B288A4A4300BAB6D9 /* Sources */,
+				E135B49C288A4A4300BAB6D9 /* Frameworks */,
+				E135B49D288A4A4300BAB6D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E135B4A1288A4A4300BAB6D9 /* PBXTargetDependency */,
+			);
+			name = SmartServiceCloudTests;
+			productName = SmartServiceCloudTests;
+			productReference = E135B49F288A4A4300BAB6D9 /* SmartServiceCloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E135B4A8288A4A4300BAB6D9 /* SmartServiceCloudUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E135B4B9288A4A4300BAB6D9 /* Build configuration list for PBXNativeTarget "SmartServiceCloudUITests" */;
+			buildPhases = (
+				8731C68A4241B25DE2AB7387 /* [CP] Check Pods Manifest.lock */,
+				E135B4A5288A4A4300BAB6D9 /* Sources */,
+				E135B4A6288A4A4300BAB6D9 /* Frameworks */,
+				E135B4A7288A4A4300BAB6D9 /* Resources */,
+				972004D531E31D97A8A48A25 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E135B4AB288A4A4300BAB6D9 /* PBXTargetDependency */,
+			);
+			name = SmartServiceCloudUITests;
+			productName = SmartServiceCloudUITests;
+			productReference = E135B4A9288A4A4300BAB6D9 /* SmartServiceCloudUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E135B47C288A4A4200BAB6D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = HZ;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E135B483288A4A4200BAB6D9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E135B49E288A4A4300BAB6D9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E135B483288A4A4200BAB6D9;
+					};
+					E135B4A8288A4A4300BAB6D9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E135B483288A4A4200BAB6D9;
+					};
+				};
+			};
+			buildConfigurationList = E135B47F288A4A4200BAB6D9 /* Build configuration list for PBXProject "SmartServiceCloud" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E135B47B288A4A4200BAB6D9;
+			productRefGroup = E135B485288A4A4200BAB6D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E135B483288A4A4200BAB6D9 /* SmartServiceCloud */,
+				E135B49E288A4A4300BAB6D9 /* SmartServiceCloudTests */,
+				E135B4A8288A4A4300BAB6D9 /* SmartServiceCloudUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E135B482288A4A4200BAB6D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E135B497288A4A4300BAB6D9 /* LaunchScreen.storyboard in Resources */,
+				E135B494288A4A4300BAB6D9 /* Assets.xcassets in Resources */,
+				E135B492288A4A4200BAB6D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E135B49D288A4A4300BAB6D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E135B4A7288A4A4300BAB6D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8028D359D4AC264E0ED1B8A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartServiceCloud/Pods-SmartServiceCloud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartServiceCloud/Pods-SmartServiceCloud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartServiceCloud/Pods-SmartServiceCloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8731C68A4241B25DE2AB7387 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartServiceCloud-SmartServiceCloudUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		972004D531E31D97A8A48A25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartServiceCloud-SmartServiceCloudUITests/Pods-SmartServiceCloud-SmartServiceCloudUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartServiceCloud-SmartServiceCloudUITests/Pods-SmartServiceCloud-SmartServiceCloudUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartServiceCloud-SmartServiceCloudUITests/Pods-SmartServiceCloud-SmartServiceCloudUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE06F00F6B1E0F4B7D277D36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartServiceCloudTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9487306E098C2ADB9CF3524 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartServiceCloud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E135B480288A4A4200BAB6D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E135B5DB288A6C2900BAB6D9 /* AppDelegate+launchOptions.m in Sources */,
+				E135B5D5288A68E700BAB6D9 /* QDCommonListViewController.m in Sources */,
+				E135B5D7288A68E700BAB6D9 /* QDCommonTableViewController.m in Sources */,
+				E135B5BD288A68E700BAB6D9 /* UIViewController+Utils.m in Sources */,
+				E135B5C9288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m in Sources */,
+				E135B5D4288A68E700BAB6D9 /* QDTabBarViewController.m in Sources */,
+				E135B5CD288A68E700BAB6D9 /* QDUIHelper.m in Sources */,
+				E135B5C3288A68E700BAB6D9 /* QMUIButton+HZUtil.m in Sources */,
+				E135B489288A4A4200BAB6D9 /* AppDelegate.m in Sources */,
+				E135B5F1288A7A2200BAB6D9 /* HZHomeVC.m in Sources */,
+				E135B5EE288A7A0B00BAB6D9 /* HZMineVC.m in Sources */,
+				E135B49A288A4A4300BAB6D9 /* main.m in Sources */,
+				E135B5C7288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m in Sources */,
+				E135B5C1288A68E700BAB6D9 /* QMUIAlertController+HZAlertController.m in Sources */,
+				E135B5C0288A68E700BAB6D9 /* MBProgressHUD+SAKURA.m in Sources */,
+				E135B5CE288A68E700BAB6D9 /* UIImageEffects.m in Sources */,
+				E135B5D3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m in Sources */,
+				E135B5BE288A68E700BAB6D9 /* UIViewController+Global.m in Sources */,
+				E135B5CB288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m in Sources */,
+				E135B5D1288A68E700BAB6D9 /* QDCommonViewController.m in Sources */,
+				E135B5D2288A68E700BAB6D9 /* QDCommonGridViewController.m in Sources */,
+				E135B5D0288A68E700BAB6D9 /* QDCommonGroupListViewController.m in Sources */,
+				E135B5F4288A7D9F00BAB6D9 /* HZTestVC.m in Sources */,
+				E135B5CA288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m in Sources */,
+				E135B5BC288A68E700BAB6D9 /* JSONUtil.m in Sources */,
+				E135B5C4288A68E700BAB6D9 /* HZUserDefaultUtil.m in Sources */,
+				E135B5BF288A68E700BAB6D9 /* HZFileManager.m in Sources */,
+				E135B5CC288A68E700BAB6D9 /* QMUIConfigurationTemplate.m in Sources */,
+				E135B5C8288A68E700BAB6D9 /* QDThemeManager.m in Sources */,
+				E135B5D6288A68E700BAB6D9 /* QDNavigationController.m in Sources */,
+				E135B5C2288A68E700BAB6D9 /* UIView+HZUtil.m in Sources */,
+				E135B5CF288A68E700BAB6D9 /* QDCommonUI.m in Sources */,
+				E135B5E2288A783C00BAB6D9 /* MainTabBarVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E135B49B288A4A4300BAB6D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E135B4A4288A4A4300BAB6D9 /* SmartServiceCloudTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E135B4A5288A4A4300BAB6D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E135B4B0288A4A4300BAB6D9 /* SmartServiceCloudUITestsLaunchTests.m in Sources */,
+				E135B4AE288A4A4300BAB6D9 /* SmartServiceCloudUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E135B4A1288A4A4300BAB6D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E135B483288A4A4200BAB6D9 /* SmartServiceCloud */;
+			targetProxy = E135B4A0288A4A4300BAB6D9 /* PBXContainerItemProxy */;
+		};
+		E135B4AB288A4A4300BAB6D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E135B483288A4A4200BAB6D9 /* SmartServiceCloud */;
+			targetProxy = E135B4AA288A4A4300BAB6D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E135B490288A4A4200BAB6D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E135B491288A4A4200BAB6D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E135B495288A4A4300BAB6D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E135B496288A4A4300BAB6D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E135B4B1288A4A4300BAB6D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E135B4B2288A4A4300BAB6D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E135B4B4288A4A4300BAB6D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CADBE29DA76FB3FF62BEB354 /* Pods-SmartServiceCloud.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JK6DU7A7HA;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmartServiceCloud/SmartServiceCloud.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartServiceCloud/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmartServiceCloud;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccdt.SmartServiceCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.ccdt.SmartServiceCloud;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E135B4B5288A4A4300BAB6D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503FFFECDDDF101D6CA19661 /* Pods-SmartServiceCloud.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JK6DU7A7HA;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmartServiceCloud/SmartServiceCloud.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartServiceCloud/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmartServiceCloud;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccdt.SmartServiceCloud;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.ccdt.SmartServiceCloud;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E135B4B7288A4A4300BAB6D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E1D89742BDE8700E11539B /* Pods-SmartServiceCloudTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JK6DU7A7HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccdt.SmartServiceCloud.SmartServiceCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartServiceCloud.app/SmartServiceCloud";
+			};
+			name = Debug;
+		};
+		E135B4B8288A4A4300BAB6D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83EEA5D898B9FB1930F9648A /* Pods-SmartServiceCloudTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JK6DU7A7HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccdt.SmartServiceCloud.SmartServiceCloudTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartServiceCloud.app/SmartServiceCloud";
+			};
+			name = Release;
+		};
+		E135B4BA288A4A4300BAB6D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E217897395083EFCB6295E6E /* Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JK6DU7A7HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccdt.SmartServiceCloud.SmartServiceCloudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartServiceCloud;
+			};
+			name = Debug;
+		};
+		E135B4BB288A4A4300BAB6D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC755EEB7080CEE85843CB8 /* Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JK6DU7A7HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccdt.SmartServiceCloud.SmartServiceCloudUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartServiceCloud;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E135B47F288A4A4200BAB6D9 /* Build configuration list for PBXProject "SmartServiceCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E135B4B1288A4A4300BAB6D9 /* Debug */,
+				E135B4B2288A4A4300BAB6D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E135B4B3288A4A4300BAB6D9 /* Build configuration list for PBXNativeTarget "SmartServiceCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E135B4B4288A4A4300BAB6D9 /* Debug */,
+				E135B4B5288A4A4300BAB6D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E135B4B6288A4A4300BAB6D9 /* Build configuration list for PBXNativeTarget "SmartServiceCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E135B4B7288A4A4300BAB6D9 /* Debug */,
+				E135B4B8288A4A4300BAB6D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E135B4B9288A4A4300BAB6D9 /* Build configuration list for PBXNativeTarget "SmartServiceCloudUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E135B4BA288A4A4300BAB6D9 /* Debug */,
+				E135B4BB288A4A4300BAB6D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E135B47C288A4A4200BAB6D9 /* Project object */;
+}
