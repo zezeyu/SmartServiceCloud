@@ -8,7 +8,8 @@ target 'SmartServiceCloud' do
   pod 'HZFaceRecognition', :path => 'Lib/HZFaceRecognition', :modular_headers => true #人脸识别模块
   pod 'HZSwiftLib', :path => 'Lib/HZSwiftLib', :modular_headers => true
   pod 'HZOCLib', :path => 'Lib/HZOCLib', :modular_headers => true
-  pod 'HZThemeManager', :path => 'Lib/HZThemeManager', :modular_headers => true  # 主题切换
+  pod 'HZThemeManager', :path => 'Lib/HZThemeManager', :modular_headers => true  # 主题配置
+  pod 'HZLogin', :path => 'Lib/HZLogin', :modular_headers => true #登录（人脸登录）
   
   # Pods for SmartServiceCloud
   pod 'SDWebImage', '~> 5.13.0'

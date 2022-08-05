@@ -23,9 +23,7 @@
     
     // 2. 然后设置主题的生成器
     QMUIThemeManagerCenter.defaultThemeManager.themeGenerator = ^__kindof NSObject * _Nonnull(NSString * _Nonnull identifier) {
-        
-        
-        if ([identifier isEqualToString:QDThemeIdentifierDefault]) return [[QMUIConfigurationTemplate alloc]init];
+        if ([identifier isEqualToString:QDThemeIdentifierDefault]) return [QMUIConfigurationTemplate new];
         return nil;
     };
     
@@ -36,7 +34,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [self loadMainTabBar];
+    [self loadLoginVC];
+//    [self loadMainTabBar];
     
     return YES;
 }
