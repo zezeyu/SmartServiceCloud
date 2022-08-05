@@ -1,0 +1,16 @@
+PODS:
+  - HZSwiftLib (0.1.0)
+
+DEPENDENCIES:
+  - HZSwiftLib (from `../`)
+
+EXTERNAL SOURCES:
+  HZSwiftLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HZSwiftLib: f6c38558d3fc4232131ba2b7f5b9bee62a8da555
+
+PODFILE CHECKSUM: 035b411f867089917f709489d0bd7eaaba048888
+
+COCOAPODS: 1.11.3

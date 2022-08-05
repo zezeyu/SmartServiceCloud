@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HZThemeManager_Example' do
+  pod 'HZThemeManager', :path => '../'
+
+  target 'HZThemeManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

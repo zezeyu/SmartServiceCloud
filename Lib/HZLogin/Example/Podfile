@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HZLogin_Example' do
+  pod 'HZLogin', :path => '../'
+
+  target 'HZLogin_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - HZOCLib (0.1.0)
+
+DEPENDENCIES:
+  - HZOCLib (from `../`)
+
+EXTERNAL SOURCES:
+  HZOCLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HZOCLib: dfae846fd09b56719c8287ce016a35138a880deb
+
+PODFILE CHECKSUM: c41dd3ae5df5f89f02d5feb1dce423c46b02cd8f
+
+COCOAPODS: 1.11.3

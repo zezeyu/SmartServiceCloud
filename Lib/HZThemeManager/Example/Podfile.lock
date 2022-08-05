@@ -1,0 +1,16 @@
+PODS:
+  - HZThemeManager (0.1.0)
+
+DEPENDENCIES:
+  - HZThemeManager (from `../`)
+
+EXTERNAL SOURCES:
+  HZThemeManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HZThemeManager: 61e9ffbc7d3f250c55506dfbe29a70686c97b9db
+
+PODFILE CHECKSUM: 7f52df16d5cb7752d1f59cc77e2cbffdb1177df9
+
+COCOAPODS: 1.11.3

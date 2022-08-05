@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HZFaceRecognition_Example' do
+  pod 'HZFaceRecognition', :path => '../'
+#  pod 'HZSwift', :path => '../../HZSwift'
+  target 'HZFaceRecognition_Tests' do
+    inherit! :search_paths
+    
+    pod 'FBSnapshotTestCase'
+  end
+end
