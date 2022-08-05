@@ -7,9 +7,9 @@
 
 #import "AppDelegate.h"
 #import <IQKeyboardManager.h>
-#import "QMUIConfigurationTemplate.h"
 #import "AppDelegate+launchOptions.h"
-
+#import <HZThemeManager.h>
+#import "QMUIConfigurationTemplate.h"
 @interface AppDelegate ()
 
 @end
@@ -23,7 +23,9 @@
     
     // 2. 然后设置主题的生成器
     QMUIThemeManagerCenter.defaultThemeManager.themeGenerator = ^__kindof NSObject * _Nonnull(NSString * _Nonnull identifier) {
-        if ([identifier isEqualToString:QDThemeIdentifierDefault]) return QMUIConfigurationTemplate.new;
+        
+        
+        if ([identifier isEqualToString:QDThemeIdentifierDefault]) return [[QMUIConfigurationTemplate alloc]init];
         return nil;
     };
     

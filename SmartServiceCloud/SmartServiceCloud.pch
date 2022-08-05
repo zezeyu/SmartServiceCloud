@@ -12,6 +12,7 @@
 #import <Masonry.h>
 #import <MJRefresh.h>
 #import <MJExtension.h>
-#import "HZCommonMacros.h"
+#import <HZOCLib.h>
+#import <HZThemeManager.h>
 
 #endif /* SmartServiceCloud_pch */

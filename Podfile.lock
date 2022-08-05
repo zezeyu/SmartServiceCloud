@@ -17,7 +17,6 @@ PODS:
   - HZFaceRecognition (0.1.0):
     - HZOCLib
     - HZSwiftLib
-    - SnapKit
   - HZOCLib (0.1.0):
     - HZThemeManager
     - MBProgressHUD (~> 1.2.0)
@@ -376,7 +375,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  HZFaceRecognition: 515a87dfef53509b6f76d7ea437c909fbd796695
+  HZFaceRecognition: 555a0affed7d2149e663ef972430d8795b5bcb60
   HZOCLib: f3b724d2dd2d6dc2c97a08b3e7f06358208b253d
   HZSwiftLib: fe7c3d50ec3ca6a3c776c03d590e4085e094a778
   HZThemeManager: 6ea143726910dce6ca3007343653bc81afe39a3d
