@@ -27,23 +27,6 @@
 		E135B5C2288A68E700BAB6D9 /* UIView+HZUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B58C288A68E700BAB6D9 /* UIView+HZUtil.m */; };
 		E135B5C3288A68E700BAB6D9 /* QMUIButton+HZUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B58D288A68E700BAB6D9 /* QMUIButton+HZUtil.m */; };
 		E135B5C4288A68E700BAB6D9 /* HZUserDefaultUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B58E288A68E700BAB6D9 /* HZUserDefaultUtil.m */; };
-		E135B5C7288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B598288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m */; };
-		E135B5C8288A68E700BAB6D9 /* QDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B59A288A68E700BAB6D9 /* QDThemeManager.m */; };
-		E135B5C9288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B59B288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m */; };
-		E135B5CA288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B59D288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m */; };
-		E135B5CB288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A0288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m */; };
-		E135B5CC288A68E700BAB6D9 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A3288A68E700BAB6D9 /* QMUIConfigurationTemplate.m */; };
-		E135B5CD288A68E700BAB6D9 /* QDUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A7288A68E700BAB6D9 /* QDUIHelper.m */; };
-		E135B5CE288A68E700BAB6D9 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A8288A68E700BAB6D9 /* UIImageEffects.m */; };
-		E135B5CF288A68E700BAB6D9 /* QDCommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5A9288A68E700BAB6D9 /* QDCommonUI.m */; };
-		E135B5D0288A68E700BAB6D9 /* QDCommonGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5AC288A68E700BAB6D9 /* QDCommonGroupListViewController.m */; };
-		E135B5D1288A68E700BAB6D9 /* QDCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5AF288A68E700BAB6D9 /* QDCommonViewController.m */; };
-		E135B5D2288A68E700BAB6D9 /* QDCommonGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B2288A68E700BAB6D9 /* QDCommonGridViewController.m */; };
-		E135B5D3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m */; };
-		E135B5D4288A68E700BAB6D9 /* QDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B4288A68E700BAB6D9 /* QDTabBarViewController.m */; };
-		E135B5D5288A68E700BAB6D9 /* QDCommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B6288A68E700BAB6D9 /* QDCommonListViewController.m */; };
-		E135B5D6288A68E700BAB6D9 /* QDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5B9288A68E700BAB6D9 /* QDNavigationController.m */; };
-		E135B5D7288A68E700BAB6D9 /* QDCommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5BA288A68E700BAB6D9 /* QDCommonTableViewController.m */; };
 		E135B5DB288A6C2900BAB6D9 /* AppDelegate+launchOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5DA288A6C2900BAB6D9 /* AppDelegate+launchOptions.m */; };
 		E135B5E2288A783C00BAB6D9 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5E1288A783C00BAB6D9 /* MainTabBarVC.m */; };
 		E135B5EE288A7A0B00BAB6D9 /* HZMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5ED288A7A0B00BAB6D9 /* HZMineVC.m */; };
@@ -114,41 +97,6 @@
 		E135B58D288A68E700BAB6D9 /* QMUIButton+HZUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUIButton+HZUtil.m"; sourceTree = "<group>"; };
 		E135B58E288A68E700BAB6D9 /* HZUserDefaultUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZUserDefaultUtil.m; sourceTree = "<group>"; };
 		E135B58F288A68E700BAB6D9 /* SmartServiceCloud.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartServiceCloud.pch; sourceTree = "<group>"; };
-		E135B597288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateGrass.h; sourceTree = "<group>"; };
-		E135B598288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateDark.m; sourceTree = "<group>"; };
-		E135B599288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateGrapefruit.h; sourceTree = "<group>"; };
-		E135B59A288A68E700BAB6D9 /* QDThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDThemeManager.m; sourceTree = "<group>"; };
-		E135B59B288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplatePinkRose.m; sourceTree = "<group>"; };
-		E135B59C288A68E700BAB6D9 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
-		E135B59D288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateGrass.m; sourceTree = "<group>"; };
-		E135B59E288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateDark.h; sourceTree = "<group>"; };
-		E135B59F288A68E700BAB6D9 /* QDThemeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDThemeProtocol.h; sourceTree = "<group>"; };
-		E135B5A0288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateGrapefruit.m; sourceTree = "<group>"; };
-		E135B5A1288A68E700BAB6D9 /* QDThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDThemeManager.h; sourceTree = "<group>"; };
-		E135B5A2288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplatePinkRose.h; sourceTree = "<group>"; };
-		E135B5A3288A68E700BAB6D9 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
-		E135B5A5288A68E700BAB6D9 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
-		E135B5A6288A68E700BAB6D9 /* QDCommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonUI.h; sourceTree = "<group>"; };
-		E135B5A7288A68E700BAB6D9 /* QDUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIHelper.m; sourceTree = "<group>"; };
-		E135B5A8288A68E700BAB6D9 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
-		E135B5A9288A68E700BAB6D9 /* QDCommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonUI.m; sourceTree = "<group>"; };
-		E135B5AA288A68E700BAB6D9 /* QDUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIHelper.h; sourceTree = "<group>"; };
-		E135B5AC288A68E700BAB6D9 /* QDCommonGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGroupListViewController.m; sourceTree = "<group>"; };
-		E135B5AD288A68E700BAB6D9 /* QDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarViewController.h; sourceTree = "<group>"; };
-		E135B5AE288A68E700BAB6D9 /* QDCommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonListViewController.h; sourceTree = "<group>"; };
-		E135B5AF288A68E700BAB6D9 /* QDCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonViewController.m; sourceTree = "<group>"; };
-		E135B5B0288A68E700BAB6D9 /* QDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationController.h; sourceTree = "<group>"; };
-		E135B5B1288A68E700BAB6D9 /* QDCommonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonTableViewController.h; sourceTree = "<group>"; };
-		E135B5B2288A68E700BAB6D9 /* QDCommonGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGridViewController.m; sourceTree = "<group>"; };
-		E135B5B3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDStyleSelectableTableViewController.m; sourceTree = "<group>"; };
-		E135B5B4288A68E700BAB6D9 /* QDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarViewController.m; sourceTree = "<group>"; };
-		E135B5B5288A68E700BAB6D9 /* QDCommonGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGroupListViewController.h; sourceTree = "<group>"; };
-		E135B5B6288A68E700BAB6D9 /* QDCommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonListViewController.m; sourceTree = "<group>"; };
-		E135B5B7288A68E700BAB6D9 /* QDCommonGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGridViewController.h; sourceTree = "<group>"; };
-		E135B5B8288A68E700BAB6D9 /* QDCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonViewController.h; sourceTree = "<group>"; };
-		E135B5B9288A68E700BAB6D9 /* QDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationController.m; sourceTree = "<group>"; };
-		E135B5BA288A68E700BAB6D9 /* QDCommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonTableViewController.m; sourceTree = "<group>"; };
-		E135B5BB288A68E700BAB6D9 /* QDStyleSelectableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDStyleSelectableTableViewController.h; sourceTree = "<group>"; };
 		E135B5D9288A6C2900BAB6D9 /* AppDelegate+launchOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+launchOptions.h"; sourceTree = "<group>"; };
 		E135B5DA288A6C2900BAB6D9 /* AppDelegate+launchOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+launchOptions.m"; sourceTree = "<group>"; };
 		E135B5E0288A783C00BAB6D9 /* MainTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarVC.h; sourceTree = "<group>"; };
@@ -240,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				E135B5DF288A782400BAB6D9 /* Main */,
-				E135B595288A68E700BAB6D9 /* Common */,
 				E135B573288A68E700BAB6D9 /* Macros */,
 				E135B58F288A68E700BAB6D9 /* SmartServiceCloud.pch */,
 				E135B57A288A68E700BAB6D9 /* Utils */,
@@ -327,72 +274,6 @@
 				E135B58A288A68E700BAB6D9 /* MBProgressHUD+SAKURA.m */,
 			);
 			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		E135B595288A68E700BAB6D9 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				E135B596288A68E700BAB6D9 /* Configuration */,
-				E135B5A4288A68E700BAB6D9 /* Utils */,
-				E135B5AB288A68E700BAB6D9 /* Controllers */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		E135B596288A68E700BAB6D9 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				E135B598288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m */,
-				E135B59E288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.h */,
-				E135B5A2288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.h */,
-				E135B59B288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m */,
-				E135B59C288A68E700BAB6D9 /* QMUIConfigurationTemplate.h */,
-				E135B5A3288A68E700BAB6D9 /* QMUIConfigurationTemplate.m */,
-				E135B597288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.h */,
-				E135B59D288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m */,
-				E135B59F288A68E700BAB6D9 /* QDThemeProtocol.h */,
-				E135B5A1288A68E700BAB6D9 /* QDThemeManager.h */,
-				E135B59A288A68E700BAB6D9 /* QDThemeManager.m */,
-				E135B599288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.h */,
-				E135B5A0288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		E135B5A4288A68E700BAB6D9 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				E135B5A6288A68E700BAB6D9 /* QDCommonUI.h */,
-				E135B5A9288A68E700BAB6D9 /* QDCommonUI.m */,
-				E135B5AA288A68E700BAB6D9 /* QDUIHelper.h */,
-				E135B5A7288A68E700BAB6D9 /* QDUIHelper.m */,
-				E135B5A5288A68E700BAB6D9 /* UIImageEffects.h */,
-				E135B5A8288A68E700BAB6D9 /* UIImageEffects.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		E135B5AB288A68E700BAB6D9 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E135B5AD288A68E700BAB6D9 /* QDTabBarViewController.h */,
-				E135B5B4288A68E700BAB6D9 /* QDTabBarViewController.m */,
-				E135B5AE288A68E700BAB6D9 /* QDCommonListViewController.h */,
-				E135B5B6288A68E700BAB6D9 /* QDCommonListViewController.m */,
-				E135B5B0288A68E700BAB6D9 /* QDNavigationController.h */,
-				E135B5B9288A68E700BAB6D9 /* QDNavigationController.m */,
-				E135B5B1288A68E700BAB6D9 /* QDCommonTableViewController.h */,
-				E135B5BA288A68E700BAB6D9 /* QDCommonTableViewController.m */,
-				E135B5BB288A68E700BAB6D9 /* QDStyleSelectableTableViewController.h */,
-				E135B5B3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m */,
-				E135B5B5288A68E700BAB6D9 /* QDCommonGroupListViewController.h */,
-				E135B5AC288A68E700BAB6D9 /* QDCommonGroupListViewController.m */,
-				E135B5B7288A68E700BAB6D9 /* QDCommonGridViewController.h */,
-				E135B5B2288A68E700BAB6D9 /* QDCommonGridViewController.m */,
-				E135B5B8288A68E700BAB6D9 /* QDCommonViewController.h */,
-				E135B5AF288A68E700BAB6D9 /* QDCommonViewController.m */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E135B5DF288A782400BAB6D9 /* Main */ = {
@@ -673,37 +554,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E135B5DB288A6C2900BAB6D9 /* AppDelegate+launchOptions.m in Sources */,
-				E135B5D5288A68E700BAB6D9 /* QDCommonListViewController.m in Sources */,
-				E135B5D7288A68E700BAB6D9 /* QDCommonTableViewController.m in Sources */,
 				E135B5BD288A68E700BAB6D9 /* UIViewController+Utils.m in Sources */,
-				E135B5C9288A68E700BAB6D9 /* QMUIConfigurationTemplatePinkRose.m in Sources */,
-				E135B5D4288A68E700BAB6D9 /* QDTabBarViewController.m in Sources */,
-				E135B5CD288A68E700BAB6D9 /* QDUIHelper.m in Sources */,
 				E135B5C3288A68E700BAB6D9 /* QMUIButton+HZUtil.m in Sources */,
 				E135B489288A4A4200BAB6D9 /* AppDelegate.m in Sources */,
 				E135B5F1288A7A2200BAB6D9 /* HZHomeVC.m in Sources */,
 				E135B5EE288A7A0B00BAB6D9 /* HZMineVC.m in Sources */,
 				E135B49A288A4A4300BAB6D9 /* main.m in Sources */,
-				E135B5C7288A68E700BAB6D9 /* QMUIConfigurationTemplateDark.m in Sources */,
 				E135B5C1288A68E700BAB6D9 /* QMUIAlertController+HZAlertController.m in Sources */,
 				E135B5C0288A68E700BAB6D9 /* MBProgressHUD+SAKURA.m in Sources */,
-				E135B5CE288A68E700BAB6D9 /* UIImageEffects.m in Sources */,
-				E135B5D3288A68E700BAB6D9 /* QDStyleSelectableTableViewController.m in Sources */,
 				E135B5BE288A68E700BAB6D9 /* UIViewController+Global.m in Sources */,
-				E135B5CB288A68E700BAB6D9 /* QMUIConfigurationTemplateGrapefruit.m in Sources */,
-				E135B5D1288A68E700BAB6D9 /* QDCommonViewController.m in Sources */,
-				E135B5D2288A68E700BAB6D9 /* QDCommonGridViewController.m in Sources */,
-				E135B5D0288A68E700BAB6D9 /* QDCommonGroupListViewController.m in Sources */,
 				E135B5F4288A7D9F00BAB6D9 /* HZTestVC.m in Sources */,
-				E135B5CA288A68E700BAB6D9 /* QMUIConfigurationTemplateGrass.m in Sources */,
 				E135B5BC288A68E700BAB6D9 /* JSONUtil.m in Sources */,
 				E135B5C4288A68E700BAB6D9 /* HZUserDefaultUtil.m in Sources */,
 				E135B5BF288A68E700BAB6D9 /* HZFileManager.m in Sources */,
-				E135B5CC288A68E700BAB6D9 /* QMUIConfigurationTemplate.m in Sources */,
-				E135B5C8288A68E700BAB6D9 /* QDThemeManager.m in Sources */,
-				E135B5D6288A68E700BAB6D9 /* QDNavigationController.m in Sources */,
 				E135B5C2288A68E700BAB6D9 /* UIView+HZUtil.m in Sources */,
-				E135B5CF288A68E700BAB6D9 /* QDCommonUI.m in Sources */,
 				E135B5E2288A783C00BAB6D9 /* MainTabBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
