@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'HZFaceRecognition/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'HZFaceRecognition' => ['HZFaceRecognition/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'HZFaceRecognition' => ['HZFaceRecognition/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

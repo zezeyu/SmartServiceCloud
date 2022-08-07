@@ -10,6 +10,7 @@
 		4DABF4EEAB24264B75B4CB9D /* Pods_SmartServiceCloud_SmartServiceCloudUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444E928B0D7CF39C2D543AFF /* Pods_SmartServiceCloud_SmartServiceCloudUITests.framework */; };
 		757E40B64157311EAECBE0B7 /* Pods_SmartServiceCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E088BE5BECBE3475116803 /* Pods_SmartServiceCloud.framework */; };
 		A57404761C42E5E7D9111279 /* Pods_SmartServiceCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB25C5238FCC8AA438164DF4 /* Pods_SmartServiceCloudTests.framework */; };
+		E1348273289FB9930068B06A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1348272289FB9930068B06A /* AVFoundation.framework */; };
 		E135B489288A4A4200BAB6D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B488288A4A4200BAB6D9 /* AppDelegate.m */; };
 		E135B492288A4A4200BAB6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E135B490288A4A4200BAB6D9 /* Main.storyboard */; };
 		E135B494288A4A4300BAB6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E135B493288A4A4300BAB6D9 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		9DC755EEB7080CEE85843CB8 /* Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloud-SmartServiceCloudUITests/Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB25C5238FCC8AA438164DF4 /* Pods_SmartServiceCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartServiceCloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADBE29DA76FB3FF62BEB354 /* Pods-SmartServiceCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloud.debug.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloud/Pods-SmartServiceCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		E1348272289FB9930068B06A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E135B484288A4A4200BAB6D9 /* SmartServiceCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartServiceCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E135B487288A4A4200BAB6D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E135B488288A4A4200BAB6D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1348273289FB9930068B06A /* AVFoundation.framework in Frameworks */,
 				757E40B64157311EAECBE0B7 /* Pods_SmartServiceCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +140,7 @@
 		9F619132F9FF338F48439C6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1348272289FB9930068B06A /* AVFoundation.framework */,
 				E1E088BE5BECBE3475116803 /* Pods_SmartServiceCloud.framework */,
 				444E928B0D7CF39C2D543AFF /* Pods_SmartServiceCloud_SmartServiceCloudUITests.framework */,
 				BB25C5238FCC8AA438164DF4 /* Pods_SmartServiceCloudTests.framework */,

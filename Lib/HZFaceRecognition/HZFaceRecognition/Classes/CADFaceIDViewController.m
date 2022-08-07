@@ -12,9 +12,9 @@
 
 @interface CADFaceIDViewController ()<AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureMetadataOutputObjectsDelegate>
 {
-    AVCaptureDeviceInput *input;
     BOOL isFace;
 }
+@property(nonatomic,strong)AVCaptureDeviceInput *input;
 // 摄像头设备fasdfas
 @property (nonatomic,strong) AVCaptureDevice *device;
 
@@ -49,11 +49,8 @@
 #pragma mark view
 -(CADPreviewView *)previewView{
     if (!_previewView) {
-        _previewView = [[CADPreviewView alloc]init];
+        _previewView = [[CADPreviewView alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
         [self.view addSubview:_previewView];
-        [_previewView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.top.right.bottom.equalTo(self.view);
-        }];
     }
     return _previewView;
 }
@@ -138,15 +135,15 @@
         
         // 2、设置输入：由于模拟器没有摄像头，因此最好做一个判断
         NSError *error = nil;
-        input = [AVCaptureDeviceInput deviceInputWithDevice:self.device error:&error];
+        _input = [AVCaptureDeviceInput deviceInputWithDevice:self.device error:&error];
         
         if (error) {
             UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
             [self alertControllerWithTitle:@"没有摄像设备" message:error.localizedDescription okAction:okAction cancelAction:nil];
         }else {
             
-            if ([_session canAddInput:input]) {
-                [_session addInput:input];
+            if ([_session canAddInput:_input]) {
+                [_session addInput:_input];
             }
             
             if ([_session canAddOutput:self.videoDataOutput]) {
@@ -181,8 +178,8 @@
 -(dispatch_queue_t)queue {
     if (_queue == nil) {
 //                _queue = dispatch_queue_create("AVCaptureSession_Start_Running_Queue", DISPATCH_QUEUE_SERIAL);
-        _queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-//        _queue = dispatch_get_main_queue();
+//        _queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        _queue = dispatch_get_main_queue();
     }
     
     return _queue;
@@ -238,7 +235,11 @@
 }
 
 -(void)initUI{
+    self.navigationItem.leftBarButtonItem =  [UIBarButtonItem qmui_backItemWithTarget:self action:@selector(onClickBack)];
     
+}
+-(void)onClickBack{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 #pragma mark - 检测摄像头权限
 -(void)checkAuthorizationStatus {
@@ -299,6 +300,8 @@
 #pragma mark 从输出的元数据中捕捉人脸
 // 检测人脸是为了获得“人脸区域”，做“人脸区域”与“身份证人像框”的区域对比，当前者在后者范围内的时候，才能截取到完整的身份证图像
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
+    
+    
     if (metadataObjects.count) {
         AVMetadataMachineReadableCodeObject *metadataObject = metadataObjects.firstObject;
         
@@ -328,10 +331,8 @@
         if ([captureOutput isEqual:self.videoDataOutput]) {
             // 身份证信息识别
             UIImage * image = [UIImage getImageStream:imageBuffer];
-            
-            if (isFace == NO) {
-                [self play_face_scan_sound];
-                if (_isSignIn) {//人脸签到页面
+            [self play_face_scan_sound];
+            if (_isSignIn) {//人脸签到页面
 //                    CADSignInResultViewController * resultVc = [[CADSignInResultViewController alloc]init];
 //                    resultVc.isNeedFace = true;
 //                    resultVc.FaceHead = [[UIImage getImageStream:imageBuffer] imageRotation:UIImageOrientationRight];
@@ -345,17 +346,14 @@
 //                    dispatch_async(dispatch_get_main_queue(), ^{
 //                        [self.navigationController pushViewController:resultVc animated:YES];
 //                    });
-                } else {
-                    if (self.faceImage != nil) {
-                        self.faceImage([image imageRotation:UIImageOrientationRight]);
-                    }
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [self.navigationController popViewControllerAnimated:YES];
-                    });
+            } else {
+                if (self.faceImage != nil) {
+                    self.faceImage([image imageRotation:UIImageOrientationRight]);
                 }
-                isFace = YES;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.navigationController popViewControllerAnimated:YES];
+                });
             }
-            
             
             // 身份证信息识别完毕后，就将videoDataOutput的代理去掉，防止频繁调用AVCaptureVideoDataOutputSampleBufferDelegate方法而引起的“混乱”
             if (self.videoDataOutput.sampleBufferDelegate) {
@@ -376,7 +374,9 @@
 
 - (void)play_face_scan_sound{
     SystemSoundID systemSoundID = 0;
-    NSString * path = [[NSBundle mainBundle] pathForResource:@"face_scan_sound" ofType:@"wav"];
+    NSString *bundlePath = [[NSBundle bundleForClass:[self class]].resourcePath
+                                stringByAppendingPathComponent:@"/HZFaceRecognition.bundle"];
+    NSString * path = [NSString stringWithFormat:@"%@/face_scan_sound.wav",bundlePath];
     AudioServicesCreateSystemSoundID(CFBridgingRetain([NSURL fileURLWithPath:path]), &systemSoundID);
     AudioServicesPlayAlertSound(systemSoundID);
 }

@@ -18,11 +18,11 @@ typedef void (^faceImageBlcok)(UIImage *);
 /**是不是签到的人脸识别*/
 @property (nonatomic,assign)BOOL isSignIn;
 
-@property (nonatomic,strong)NSString * trainId;
-@property (nonatomic,strong)NSString * trainLat;
-@property (nonatomic,strong)NSString * trainLng;
-@property (nonatomic,strong)NSString * trainLocation;
-@property (nonatomic,strong)NSString * signType;
+@property (nonatomic,copy)NSString * trainId;
+@property (nonatomic,copy)NSString * trainLat;
+@property (nonatomic,copy)NSString * trainLng;
+@property (nonatomic,copy)NSString * trainLocation;
+@property (nonatomic,copy)NSString * signType;
 @end
 
 NS_ASSUME_NONNULL_END

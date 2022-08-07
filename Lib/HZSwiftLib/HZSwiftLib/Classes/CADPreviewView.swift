@@ -57,14 +57,12 @@ fileprivate struct Metric{
     fileprivate var previewLayer = AVCaptureVideoPreviewLayer()
     @objc public var facePathRect:CGRect = CGRect()
     
-    override init(frame: CGRect) {
+    @objc public override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        setupViews()
         scanLineUI()
     }
-    public override func layoutSubviews() {
-        setupViews()
-    }
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - kTopHeight)
