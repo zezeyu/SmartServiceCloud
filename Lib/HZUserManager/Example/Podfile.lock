@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HZUserManager (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - HZUserManager (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  HZUserManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HZUserManager: b5401190ce754f4bec9d1c7bce41d0e5ff36db8e
+
+PODFILE CHECKSUM: 8544ac88fec3d1bd42e9ba3000fdb0773cad4c3c
+
+COCOAPODS: 1.11.3

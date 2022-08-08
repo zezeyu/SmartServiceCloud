@@ -1,0 +1,16 @@
+PODS:
+  - HZMine (0.1.0)
+
+DEPENDENCIES:
+  - HZMine (from `../`)
+
+EXTERNAL SOURCES:
+  HZMine:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HZMine: 9b6a434faf8eac7a4fa92e60103fd4aa48a9c830
+
+PODFILE CHECKSUM: db25ad5406f78b1d169378b222f1478a490d0953
+
+COCOAPODS: 1.11.3

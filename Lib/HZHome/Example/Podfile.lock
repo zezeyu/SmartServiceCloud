@@ -1,0 +1,16 @@
+PODS:
+  - HZHome (0.1.0)
+
+DEPENDENCIES:
+  - HZHome (from `../`)
+
+EXTERNAL SOURCES:
+  HZHome:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HZHome: 321a06108981b5302c57d810d0f347c8af41a484
+
+PODFILE CHECKSUM: a55ac27cc2f7636fd25cd49f4c24d125efecc1d4
+
+COCOAPODS: 1.11.3

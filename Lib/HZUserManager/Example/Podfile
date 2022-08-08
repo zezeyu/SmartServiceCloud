@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HZUserManager_Example' do
+  pod 'HZUserManager', :path => '../'
+
+  target 'HZUserManager_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

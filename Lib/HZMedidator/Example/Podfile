@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HZMedidator_Example' do
+  pod 'HZMedidator', :path => '../'
+
+  target 'HZMedidator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

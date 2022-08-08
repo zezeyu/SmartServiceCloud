@@ -1,0 +1,16 @@
+PODS:
+  - HZMedidator (0.1.0)
+
+DEPENDENCIES:
+  - HZMedidator (from `../`)
+
+EXTERNAL SOURCES:
+  HZMedidator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HZMedidator: 0dd3ef853dd65a9f301d120b9ea7fe98a9ea998c
+
+PODFILE CHECKSUM: 8f7e632fa9803689709dd3efac6c261a08a5f663
+
+COCOAPODS: 1.11.3
