@@ -10,6 +10,7 @@
 #import <HZOCLib/HZOCLib.h>
 #import <HZUserManager/HZUserManager.h>
 #import <HZMedidator/HZMedidator.h>
+
 @interface HZLoginVC ()
 
 @property(nonatomic,strong)QMUIButton *loginButton;
@@ -20,6 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    weakify(self);
+    [QMUIAlertController showAlertAttributes:@"登录" message:@"去登录一下吧~" cancelTitle:@"不想登录" defaultTitle:@"去登录" confirm:^(NSInteger buttonTag) {strongify(self);
+        if (buttonTag) {
+            [self goLogin];
+        }
+    }];
     self.loginButton.backgroundColor = UIColor.qd_tintColor;
 }
 
@@ -30,20 +37,16 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    weakify(self);
-    [QMUIAlertController showAlertAttributes:@"登录" message:@"去登录一下吧~" cancelTitle:@"不想登录" defaultTitle:@"去登录" confirm:^(NSInteger buttonTag) {strongify(self);
-        if (buttonTag) {
-            [self goLogin];
-        }
-    }];
 }
 -(void)goLogin{
     CADFaceIDViewController *faceIDVC = [CADFaceIDViewController new];
     faceIDVC.title = @"刷脸登录";
     faceIDVC.faceImage = ^(UIImage * _Nonnull image) {
         [image saveFaceImage];
-        UIWindow *window = [UIApplication sharedApplication].delegate.window;
-        [[HZMedidator shardInstance]loadMainTabBar:window];
+        if ([[HZMedidator shardInstance].delegate respondsToSelector:@selector(loadMainTabBar)]) {
+            [[HZMedidator shardInstance].delegate loadMainTabBar];
+            [QMUITips showSucceed:@"登录成功"];
+        }
     };
     QDNavigationController * nav = [[QDNavigationController alloc]initWithRootViewController:faceIDVC];
     [self presentViewController:nav animated:YES completion:nil];

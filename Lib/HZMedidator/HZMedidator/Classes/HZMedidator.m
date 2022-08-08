@@ -29,15 +29,19 @@
 }
 
 -(void)loadLoginVC:(UIWindow *)window{
+    window.rootViewController = nil;
     Class class = NSClassFromString(@"HZLoginVC");
     UIViewController *vc = [[class alloc] init];
     window.rootViewController = vc;
+    [window makeKeyAndVisible];
 }
 
 -(void)loadMainTabBar:(UIWindow *)window{
+    window.rootViewController = nil;
     Class class = NSClassFromString(@"HZMainTabBarVC");
     QDTabBarViewController *vc = [[class alloc] init];
     window.rootViewController = vc;
+    [window makeKeyAndVisible];
 }
 
 @end

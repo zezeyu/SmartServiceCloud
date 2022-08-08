@@ -351,13 +351,12 @@
                     self.faceImage([image imageRotation:UIImageOrientationRight]);
                 }
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.navigationController popViewControllerAnimated:YES];
+                    [self dismissViewControllerAnimated:NO completion:nil];
                 });
             }
-            
             // 身份证信息识别完毕后，就将videoDataOutput的代理去掉，防止频繁调用AVCaptureVideoDataOutputSampleBufferDelegate方法而引起的“混乱”
-            if (self.videoDataOutput.sampleBufferDelegate) {
-                [self.videoDataOutput setSampleBufferDelegate:nil queue:self.queue];
+            if (_videoDataOutput.sampleBufferDelegate) {
+                [_videoDataOutput setSampleBufferDelegate:nil queue:self.queue];
             }
             
             

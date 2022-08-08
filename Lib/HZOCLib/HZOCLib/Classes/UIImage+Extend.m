@@ -7,7 +7,7 @@
 //
 
 #import "UIImage+Extend.h"
-
+#import "HZFileManager.h"
 @implementation UIImage (Extend)
 
 + (UIImage *)imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer {
@@ -218,6 +218,14 @@
     UIImage *img = [UIImage imageWithContentsOfFile:filePath];
     return img;
     
+}
+
++(BOOL)removeFaceImage{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *filePath = [[paths objectAtIndex:0]stringByAppendingPathComponent:
+                          [NSString stringWithFormat:@"faceId.png"]];
+    BOOL isRemoveFile = [HZFileManager removeItemAtPath:filePath];
+    return isRemoveFile;
 }
 
 @end

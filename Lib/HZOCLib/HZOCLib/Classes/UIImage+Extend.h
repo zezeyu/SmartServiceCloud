@@ -20,5 +20,6 @@
 
 - (void)saveFaceImage;
 + (UIImage *)getFaceImage;
++(BOOL)removeFaceImage;
 
 @end

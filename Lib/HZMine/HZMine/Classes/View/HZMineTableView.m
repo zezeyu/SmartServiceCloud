@@ -7,6 +7,8 @@
 
 #import "HZMineTableView.h"
 #import "QDThemeViewController.h"
+#import <HZOCLib/HZOCLib.h>
+#import <HZMedidator/HZMedidator.h>
 @interface HZMineTableView()<QMUITableViewDelegate,QMUITableViewDataSource>
 
 @property(nonatomic,copy)NSArray *dataArray;
@@ -55,6 +57,19 @@
     if (indexPath.row == 2) {
         QDThemeViewController *vc = [[QDThemeViewController alloc]init];
         [[UIViewController currentViewController].navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.row == 3) {
+        [QMUIAlertController showAlertAttributes:@"退出登录" message:@"确定退出？" cancelTitle:@"取消" defaultTitle:@"确定" confirm:^(NSInteger buttonTag) {
+            if (buttonTag) {
+               BOOL isRemove = [UIImage removeFaceImage];
+                if (isRemove) {
+                    [QMUITips showSucceed:@"退出登录成功"];
+                    if ([[HZMedidator shardInstance].delegate respondsToSelector:@selector(loadLoginVC)]) {
+                        [[HZMedidator shardInstance].delegate loadLoginVC];
+                    }
+                }
+            }
+        }];
     }
 }
 

@@ -11,7 +11,8 @@
 #import <HZThemeManager.h>
 #import "QMUIConfigurationTemplate.h"
 #import <HZMedidator.h>
-
+#import <HZMain/HZMainTabBarVC.h>
+#import <HZLogin/HZLoginVC.h>
 @interface AppDelegate ()<MedidatorDelegate>
 
 @end
