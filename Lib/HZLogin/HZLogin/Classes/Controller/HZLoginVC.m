@@ -8,6 +8,8 @@
 #import "HZLoginVC.h"
 #import <HZFaceRecognition/CADFaceIDViewController.h>
 #import <HZOCLib/HZOCLib.h>
+#import <HZUserManager/HZUserManager.h>
+#import <HZMedidator/HZMedidator.h>
 @interface HZLoginVC ()
 
 @property(nonatomic,strong)QMUIButton *loginButton;
@@ -23,13 +25,29 @@
 
 #pragma -- 人脸识别
 -(void)onClickLoginAction:(QMUIButton *)sender{
-    CADFaceIDViewController *faceIDVC = [CADFaceIDViewController new];
-    faceIDVC.title = @"刷脸登录";
-    QDNavigationController * nav = [[QDNavigationController alloc]initWithRootViewController:faceIDVC];
-    [self presentViewController:nav animated:YES completion:nil];
-    
+    [self goLogin];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    weakify(self);
+    [QMUIAlertController showAlertAttributes:@"登录" message:@"去登录一下吧~" cancelTitle:@"不想登录" defaultTitle:@"去登录" confirm:^(NSInteger buttonTag) {strongify(self);
+        if (buttonTag) {
+            [self goLogin];
+        }
+    }];
+}
+-(void)goLogin{
+    CADFaceIDViewController *faceIDVC = [CADFaceIDViewController new];
+    faceIDVC.title = @"刷脸登录";
+    faceIDVC.faceImage = ^(UIImage * _Nonnull image) {
+        [image saveFaceImage];
+        UIWindow *window = [UIApplication sharedApplication].delegate.window;
+        [[HZMedidator shardInstance]loadMainTabBar:window];
+    };
+    QDNavigationController * nav = [[QDNavigationController alloc]initWithRootViewController:faceIDVC];
+    [self presentViewController:nav animated:YES completion:nil];
+}
 -(QMUIButton *)loginButton{
     if (!_loginButton) {
         _loginButton = [[QMUIButton alloc]init];

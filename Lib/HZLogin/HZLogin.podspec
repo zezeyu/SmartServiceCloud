@@ -40,4 +40,5 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'HZFaceRecognition'
    s.dependency 'HZOCLib'
+   s.dependency 'HZMedidator'
 end

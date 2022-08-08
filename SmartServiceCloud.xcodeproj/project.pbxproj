@@ -20,10 +20,6 @@
 		E135B4AE288A4A4300BAB6D9 /* SmartServiceCloudUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B4AD288A4A4300BAB6D9 /* SmartServiceCloudUITests.m */; };
 		E135B4B0288A4A4300BAB6D9 /* SmartServiceCloudUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B4AF288A4A4300BAB6D9 /* SmartServiceCloudUITestsLaunchTests.m */; };
 		E135B5DB288A6C2900BAB6D9 /* AppDelegate+launchOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5DA288A6C2900BAB6D9 /* AppDelegate+launchOptions.m */; };
-		E135B5E2288A783C00BAB6D9 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5E1288A783C00BAB6D9 /* MainTabBarVC.m */; };
-		E135B5EE288A7A0B00BAB6D9 /* HZMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5ED288A7A0B00BAB6D9 /* HZMineVC.m */; };
-		E135B5F1288A7A2200BAB6D9 /* HZHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5F0288A7A2200BAB6D9 /* HZHomeVC.m */; };
-		E135B5F4288A7D9F00BAB6D9 /* HZTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E135B5F3288A7D9F00BAB6D9 /* HZTestVC.m */; };
 		E15FA98B289D51DE00E6BA56 /* QMUIConfigurationTemplateGrass.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FA97E289D51DE00E6BA56 /* QMUIConfigurationTemplateGrass.m */; };
 		E15FA98C289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FA980289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.m */; };
 		E15FA98E289D51DE00E6BA56 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FA984289D51DE00E6BA56 /* QMUIConfigurationTemplate.m */; };
@@ -73,14 +69,6 @@
 		E135B58F288A68E700BAB6D9 /* SmartServiceCloud.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartServiceCloud.pch; sourceTree = "<group>"; };
 		E135B5D9288A6C2900BAB6D9 /* AppDelegate+launchOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+launchOptions.h"; sourceTree = "<group>"; };
 		E135B5DA288A6C2900BAB6D9 /* AppDelegate+launchOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+launchOptions.m"; sourceTree = "<group>"; };
-		E135B5E0288A783C00BAB6D9 /* MainTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarVC.h; sourceTree = "<group>"; };
-		E135B5E1288A783C00BAB6D9 /* MainTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarVC.m; sourceTree = "<group>"; };
-		E135B5EC288A7A0B00BAB6D9 /* HZMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZMineVC.h; sourceTree = "<group>"; };
-		E135B5ED288A7A0B00BAB6D9 /* HZMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMineVC.m; sourceTree = "<group>"; };
-		E135B5EF288A7A2200BAB6D9 /* HZHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZHomeVC.h; sourceTree = "<group>"; };
-		E135B5F0288A7A2200BAB6D9 /* HZHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZHomeVC.m; sourceTree = "<group>"; };
-		E135B5F2288A7D9F00BAB6D9 /* HZTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTestVC.h; sourceTree = "<group>"; };
-		E135B5F3288A7D9F00BAB6D9 /* HZTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTestVC.m; sourceTree = "<group>"; };
 		E15FA97E289D51DE00E6BA56 /* QMUIConfigurationTemplateGrass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateGrass.m; sourceTree = "<group>"; };
 		E15FA980289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateDark.m; sourceTree = "<group>"; };
 		E15FA981289D51DE00E6BA56 /* QMUIConfigurationTemplateGrapefruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateGrapefruit.h; sourceTree = "<group>"; };
@@ -173,10 +161,8 @@
 		E135B486288A4A4200BAB6D9 /* SmartServiceCloud */ = {
 			isa = PBXGroup;
 			children = (
-				E135B5DF288A782400BAB6D9 /* Main */,
 				E135B58F288A68E700BAB6D9 /* SmartServiceCloud.pch */,
 				E15FA97D289D51BE00E6BA56 /* HZThemeConfiguration */,
-				E135B5E3288A788E00BAB6D9 /* ViewControllers */,
 				E135B487288A4A4200BAB6D9 /* AppDelegate.h */,
 				E135B488288A4A4200BAB6D9 /* AppDelegate.m */,
 				E135B5D9288A6C2900BAB6D9 /* AppDelegate+launchOptions.h */,
@@ -205,44 +191,6 @@
 				E135B4AF288A4A4300BAB6D9 /* SmartServiceCloudUITestsLaunchTests.m */,
 			);
 			path = SmartServiceCloudUITests;
-			sourceTree = "<group>";
-		};
-		E135B5DF288A782400BAB6D9 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				E135B5E0288A783C00BAB6D9 /* MainTabBarVC.h */,
-				E135B5E1288A783C00BAB6D9 /* MainTabBarVC.m */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		E135B5E3288A788E00BAB6D9 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				E135B5E7288A79F600BAB6D9 /* Home(首页) */,
-				E135B5EA288A79F600BAB6D9 /* Mine(个人中心) */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		E135B5E7288A79F600BAB6D9 /* Home(首页) */ = {
-			isa = PBXGroup;
-			children = (
-				E135B5EF288A7A2200BAB6D9 /* HZHomeVC.h */,
-				E135B5F0288A7A2200BAB6D9 /* HZHomeVC.m */,
-				E135B5F2288A7D9F00BAB6D9 /* HZTestVC.h */,
-				E135B5F3288A7D9F00BAB6D9 /* HZTestVC.m */,
-			);
-			path = "Home(首页)";
-			sourceTree = "<group>";
-		};
-		E135B5EA288A79F600BAB6D9 /* Mine(个人中心) */ = {
-			isa = PBXGroup;
-			children = (
-				E135B5EC288A7A0B00BAB6D9 /* HZMineVC.h */,
-				E135B5ED288A7A0B00BAB6D9 /* HZMineVC.m */,
-			);
-			path = "Mine(个人中心)";
 			sourceTree = "<group>";
 		};
 		E15FA97D289D51BE00E6BA56 /* HZThemeConfiguration */ = {
@@ -503,16 +451,12 @@
 			files = (
 				E135B5DB288A6C2900BAB6D9 /* AppDelegate+launchOptions.m in Sources */,
 				E135B489288A4A4200BAB6D9 /* AppDelegate.m in Sources */,
-				E135B5F1288A7A2200BAB6D9 /* HZHomeVC.m in Sources */,
-				E135B5EE288A7A0B00BAB6D9 /* HZMineVC.m in Sources */,
 				E15FA98F289D51DE00E6BA56 /* QMUIConfigurationTemplateGrapefruit.m in Sources */,
 				E15FA98C289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.m in Sources */,
 				E135B49A288A4A4300BAB6D9 /* main.m in Sources */,
 				E15FA98E289D51DE00E6BA56 /* QMUIConfigurationTemplate.m in Sources */,
-				E135B5F4288A7D9F00BAB6D9 /* HZTestVC.m in Sources */,
 				E15FA990289D51DE00E6BA56 /* QMUIConfigurationTemplatePinkRose.m in Sources */,
 				E15FA98B289D51DE00E6BA56 /* QMUIConfigurationTemplateGrass.m in Sources */,
-				E135B5E2288A783C00BAB6D9 /* MainTabBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

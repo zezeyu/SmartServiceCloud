@@ -10,7 +10,9 @@
 #import "AppDelegate+launchOptions.h"
 #import <HZThemeManager.h>
 #import "QMUIConfigurationTemplate.h"
-@interface AppDelegate ()
+#import <HZMedidator.h>
+
+@interface AppDelegate ()<MedidatorDelegate>
 
 @end
 
@@ -34,8 +36,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [self loadLoginVC];
-//    [self loadMainTabBar];
+    [HZMedidator shardInstance].delegate = self;
+    [[HZMedidator shardInstance] initAppWithWindow:self.window];
     
     return YES;
 }
@@ -58,5 +60,13 @@
     }
 }
 
+#pragma --mark 加载登录页面
+- (void)loadLoginVC {
+    [[HZMedidator shardInstance]loadLoginVC:self.window];
+}
+#pragma --mark 加载主工程
+- (void)loadMainTabBar {
+    [[HZMedidator shardInstance]loadMainTabBar:self.window];
+}
 
 @end

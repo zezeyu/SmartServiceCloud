@@ -193,4 +193,31 @@
     
 }
 
+- (void)saveFaceImage {
+    //获取 Document 目录路径
+    NSArray *paths =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    // 构造保存文件的名称 保存成功会返回YES
+    NSString *filePath = [[paths objectAtIndex:0]stringByAppendingPathComponent:
+                              [NSString stringWithFormat:@"faceId.png"]];
+    //保存操作
+    BOOL result =[UIImagePNGRepresentation(self)writeToFile:filePath   atomically:YES];
+        if (result == YES) {
+            NSLog(@"保存成功");
+        }else{
+        NSLog(@"保存失败");
+    }
+}
+
++ (UIImage *)getFaceImage {
+ 
+ NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+ 
+ NSString *filePath = [[paths objectAtIndex:0]stringByAppendingPathComponent:
+                       [NSString stringWithFormat:@"faceId.png"]];
+ // 保存文件的名称
+    UIImage *img = [UIImage imageWithContentsOfFile:filePath];
+    return img;
+    
+}
+
 @end

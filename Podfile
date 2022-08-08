@@ -10,6 +10,11 @@ target 'SmartServiceCloud' do
   pod 'HZOCLib', :path => 'Lib/HZOCLib', :modular_headers => true
   pod 'HZThemeManager', :path => 'Lib/HZThemeManager', :modular_headers => true  # 主题配置
   pod 'HZLogin', :path => 'Lib/HZLogin', :modular_headers => true #登录（人脸登录）
+  pod 'HZUserManager', :path => 'Lib/HZUserManager', :modular_headers => true #管理用户数据、登录状态
+  pod 'HZMedidator', :path=> 'Lib/HZMedidator' #很关键的中间件 用来组件之间，宿主之间的通信
+  pod 'HZHome', :path=> 'Lib/HZHome' #主页
+  pod 'HZMine', :path=> 'Lib/HZMine' #个人中心
+  pod 'HZMain', :path=> 'Lib/HZMain' #tabBar
   
   # Pods for SmartServiceCloud
   pod 'SDWebImage', '~> 5.13.0'

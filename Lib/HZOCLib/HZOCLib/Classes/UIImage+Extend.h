@@ -17,4 +17,8 @@
 
 -(UIImage *)originalImage;
 -(UIImage *)imageRotation:(UIImageOrientation)orientation;
+
+- (void)saveFaceImage;
++ (UIImage *)getFaceImage;
+
 @end
