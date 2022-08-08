@@ -25,6 +25,28 @@
 		E15FA98E289D51DE00E6BA56 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FA984289D51DE00E6BA56 /* QMUIConfigurationTemplate.m */; };
 		E15FA98F289D51DE00E6BA56 /* QMUIConfigurationTemplateGrapefruit.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FA987289D51DE00E6BA56 /* QMUIConfigurationTemplateGrapefruit.m */; };
 		E15FA990289D51DE00E6BA56 /* QMUIConfigurationTemplatePinkRose.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FA988289D51DE00E6BA56 /* QMUIConfigurationTemplatePinkRose.m */; };
+		E1E2204A28A1008500439DC4 /* CADVehicleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2202E28A1008500439DC4 /* CADVehicleDetailsViewModel.swift */; };
+		E1E2204B28A1008500439DC4 /* CADVehicleArchivesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2203028A1008500439DC4 /* CADVehicleArchivesDetailsViewController.swift */; };
+		E1E2204F28A1008500439DC4 /* CADVehicleArchivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2203428A1008500439DC4 /* CADVehicleArchivesViewController.swift */; };
+		E1E2205028A1008500439DC4 /* CADVehicleDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2203628A1008500439DC4 /* CADVehicleDetailsModel.swift */; };
+		E1E2205228A1008500439DC4 /* CADPlateSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E2203928A1008500439DC4 /* CADPlateSearchView.xib */; };
+		E1E2205328A1008500439DC4 /* CADVehicleDetailsHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2203A28A1008500439DC4 /* CADVehicleDetailsHeadView.swift */; };
+		E1E2205428A1008500439DC4 /* CADInformationHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E2203B28A1008500439DC4 /* CADInformationHeadView.xib */; };
+		E1E2205628A1008500439DC4 /* CADVehicleDetailsHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E2203D28A1008500439DC4 /* CADVehicleDetailsHeadView.xib */; };
+		E1E2205728A1008500439DC4 /* CADPlateSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2203E28A1008500439DC4 /* CADPlateSearchView.swift */; };
+		E1E2205828A1008500439DC4 /* CADAddInsuranceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2204028A1008500439DC4 /* CADAddInsuranceTableViewCell.swift */; };
+		E1E2205928A1008500439DC4 /* CADInfoInsureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2204128A1008500439DC4 /* CADInfoInsureTableViewCell.swift */; };
+		E1E2205A28A1008500439DC4 /* CADVehicleInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2204228A1008500439DC4 /* CADVehicleInfoTableViewCell.swift */; };
+		E1E2205B28A1008500439DC4 /* CADInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E2204328A1008500439DC4 /* CADInformationCell.xib */; };
+		E1E2205C28A1008500439DC4 /* CADInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2204428A1008500439DC4 /* CADInformationCell.swift */; };
+		E1E2205D28A1008500439DC4 /* CADVehicleArchivesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E2204528A1008500439DC4 /* CADVehicleArchivesTableViewCell.xib */; };
+		E1E2205E28A1008500439DC4 /* CADVehicleInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E2204628A1008500439DC4 /* CADVehicleInfoTableViewCell.xib */; };
+		E1E2205F28A1008500439DC4 /* CADAddInsuranceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E2204728A1008500439DC4 /* CADAddInsuranceTableViewCell.xib */; };
+		E1E2206028A1008500439DC4 /* CADInfoInsureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E2204828A1008500439DC4 /* CADInfoInsureTableViewCell.xib */; };
+		E1E2206128A1008500439DC4 /* CADVehicleArchivesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E2204928A1008500439DC4 /* CADVehicleArchivesTableViewCell.swift */; };
+		E1E2209D28A1187000439DC4 /* UIImage+HZCreateUseExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E2209728A1187000439DC4 /* UIImage+HZCreateUseExt.m */; };
+		E1E2209E28A1187000439DC4 /* UINavigationBar+HZCreateUseExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E2209828A1187000439DC4 /* UINavigationBar+HZCreateUseExt.m */; };
+		E1E2209F28A1187000439DC4 /* UIViewController+HZBasetopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E2209C28A1187000439DC4 /* UIViewController+HZBasetopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +102,32 @@
 		E15FA989289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateDark.h; sourceTree = "<group>"; };
 		E15FA98A289D51DE00E6BA56 /* QMUIConfigurationTemplatePinkRose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplatePinkRose.h; sourceTree = "<group>"; };
 		E1E088BE5BECBE3475116803 /* Pods_SmartServiceCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartServiceCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E2202B28A0FF2A00439DC4 /* SmartServiceCloud-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartServiceCloud-Bridging-Header.h"; sourceTree = "<group>"; };
+		E1E2202E28A1008500439DC4 /* CADVehicleDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADVehicleDetailsViewModel.swift; sourceTree = "<group>"; };
+		E1E2203028A1008500439DC4 /* CADVehicleArchivesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADVehicleArchivesDetailsViewController.swift; sourceTree = "<group>"; };
+		E1E2203428A1008500439DC4 /* CADVehicleArchivesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADVehicleArchivesViewController.swift; sourceTree = "<group>"; };
+		E1E2203628A1008500439DC4 /* CADVehicleDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADVehicleDetailsModel.swift; sourceTree = "<group>"; };
+		E1E2203928A1008500439DC4 /* CADPlateSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADPlateSearchView.xib; sourceTree = "<group>"; };
+		E1E2203A28A1008500439DC4 /* CADVehicleDetailsHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADVehicleDetailsHeadView.swift; sourceTree = "<group>"; };
+		E1E2203B28A1008500439DC4 /* CADInformationHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADInformationHeadView.xib; sourceTree = "<group>"; };
+		E1E2203D28A1008500439DC4 /* CADVehicleDetailsHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADVehicleDetailsHeadView.xib; sourceTree = "<group>"; };
+		E1E2203E28A1008500439DC4 /* CADPlateSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADPlateSearchView.swift; sourceTree = "<group>"; };
+		E1E2204028A1008500439DC4 /* CADAddInsuranceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADAddInsuranceTableViewCell.swift; sourceTree = "<group>"; };
+		E1E2204128A1008500439DC4 /* CADInfoInsureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADInfoInsureTableViewCell.swift; sourceTree = "<group>"; };
+		E1E2204228A1008500439DC4 /* CADVehicleInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADVehicleInfoTableViewCell.swift; sourceTree = "<group>"; };
+		E1E2204328A1008500439DC4 /* CADInformationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADInformationCell.xib; sourceTree = "<group>"; };
+		E1E2204428A1008500439DC4 /* CADInformationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADInformationCell.swift; sourceTree = "<group>"; };
+		E1E2204528A1008500439DC4 /* CADVehicleArchivesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADVehicleArchivesTableViewCell.xib; sourceTree = "<group>"; };
+		E1E2204628A1008500439DC4 /* CADVehicleInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADVehicleInfoTableViewCell.xib; sourceTree = "<group>"; };
+		E1E2204728A1008500439DC4 /* CADAddInsuranceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADAddInsuranceTableViewCell.xib; sourceTree = "<group>"; };
+		E1E2204828A1008500439DC4 /* CADInfoInsureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADInfoInsureTableViewCell.xib; sourceTree = "<group>"; };
+		E1E2204928A1008500439DC4 /* CADVehicleArchivesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADVehicleArchivesTableViewCell.swift; sourceTree = "<group>"; };
+		E1E2209728A1187000439DC4 /* UIImage+HZCreateUseExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HZCreateUseExt.m"; sourceTree = "<group>"; };
+		E1E2209828A1187000439DC4 /* UINavigationBar+HZCreateUseExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+HZCreateUseExt.m"; sourceTree = "<group>"; };
+		E1E2209928A1187000439DC4 /* UIViewController+HZBasetopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HZBasetopView.h"; sourceTree = "<group>"; };
+		E1E2209A28A1187000439DC4 /* UINavigationBar+HZCreateUseExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+HZCreateUseExt.h"; sourceTree = "<group>"; };
+		E1E2209B28A1187000439DC4 /* UIImage+HZCreateUseExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HZCreateUseExt.h"; sourceTree = "<group>"; };
+		E1E2209C28A1187000439DC4 /* UIViewController+HZBasetopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HZBasetopView.m"; sourceTree = "<group>"; };
 		E217897395083EFCB6295E6E /* Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartServiceCloud-SmartServiceCloudUITests/Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				E135B58F288A68E700BAB6D9 /* SmartServiceCloud.pch */,
+				E1E2202B28A0FF2A00439DC4 /* SmartServiceCloud-Bridging-Header.h */,
+				E1E2209628A1187000439DC4 /* HZNavBackView */,
+				E1E2202C28A1008500439DC4 /* VehicleArchives */,
 				E15FA97D289D51BE00E6BA56 /* HZThemeConfiguration */,
 				E135B487288A4A4200BAB6D9 /* AppDelegate.h */,
 				E135B488288A4A4200BAB6D9 /* AppDelegate.m */,
@@ -208,6 +259,85 @@
 				E15FA988289D51DE00E6BA56 /* QMUIConfigurationTemplatePinkRose.m */,
 			);
 			path = HZThemeConfiguration;
+			sourceTree = "<group>";
+		};
+		E1E2202C28A1008500439DC4 /* VehicleArchives */ = {
+			isa = PBXGroup;
+			children = (
+				E1E2202D28A1008500439DC4 /* ViewModel */,
+				E1E2202F28A1008500439DC4 /* Controller */,
+				E1E2203528A1008500439DC4 /* Model */,
+				E1E2203828A1008500439DC4 /* View */,
+			);
+			path = VehicleArchives;
+			sourceTree = "<group>";
+		};
+		E1E2202D28A1008500439DC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1E2202E28A1008500439DC4 /* CADVehicleDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1E2202F28A1008500439DC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1E2203028A1008500439DC4 /* CADVehicleArchivesDetailsViewController.swift */,
+				E1E2203428A1008500439DC4 /* CADVehicleArchivesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E1E2203528A1008500439DC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1E2203628A1008500439DC4 /* CADVehicleDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1E2203828A1008500439DC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1E2203928A1008500439DC4 /* CADPlateSearchView.xib */,
+				E1E2203A28A1008500439DC4 /* CADVehicleDetailsHeadView.swift */,
+				E1E2203B28A1008500439DC4 /* CADInformationHeadView.xib */,
+				E1E2203D28A1008500439DC4 /* CADVehicleDetailsHeadView.xib */,
+				E1E2203E28A1008500439DC4 /* CADPlateSearchView.swift */,
+				E1E2203F28A1008500439DC4 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1E2203F28A1008500439DC4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E1E2204028A1008500439DC4 /* CADAddInsuranceTableViewCell.swift */,
+				E1E2204128A1008500439DC4 /* CADInfoInsureTableViewCell.swift */,
+				E1E2204228A1008500439DC4 /* CADVehicleInfoTableViewCell.swift */,
+				E1E2204328A1008500439DC4 /* CADInformationCell.xib */,
+				E1E2204428A1008500439DC4 /* CADInformationCell.swift */,
+				E1E2204528A1008500439DC4 /* CADVehicleArchivesTableViewCell.xib */,
+				E1E2204628A1008500439DC4 /* CADVehicleInfoTableViewCell.xib */,
+				E1E2204728A1008500439DC4 /* CADAddInsuranceTableViewCell.xib */,
+				E1E2204828A1008500439DC4 /* CADInfoInsureTableViewCell.xib */,
+				E1E2204928A1008500439DC4 /* CADVehicleArchivesTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E1E2209628A1187000439DC4 /* HZNavBackView */ = {
+			isa = PBXGroup;
+			children = (
+				E1E2209B28A1187000439DC4 /* UIImage+HZCreateUseExt.h */,
+				E1E2209728A1187000439DC4 /* UIImage+HZCreateUseExt.m */,
+				E1E2209A28A1187000439DC4 /* UINavigationBar+HZCreateUseExt.h */,
+				E1E2209828A1187000439DC4 /* UINavigationBar+HZCreateUseExt.m */,
+				E1E2209928A1187000439DC4 /* UIViewController+HZBasetopView.h */,
+				E1E2209C28A1187000439DC4 /* UIViewController+HZBasetopView.m */,
+			);
+			path = HZNavBackView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +449,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E2206028A1008500439DC4 /* CADInfoInsureTableViewCell.xib in Resources */,
+				E1E2205E28A1008500439DC4 /* CADVehicleInfoTableViewCell.xib in Resources */,
 				E135B497288A4A4300BAB6D9 /* LaunchScreen.storyboard in Resources */,
+				E1E2205D28A1008500439DC4 /* CADVehicleArchivesTableViewCell.xib in Resources */,
 				E135B494288A4A4300BAB6D9 /* Assets.xcassets in Resources */,
+				E1E2205628A1008500439DC4 /* CADVehicleDetailsHeadView.xib in Resources */,
+				E1E2205F28A1008500439DC4 /* CADAddInsuranceTableViewCell.xib in Resources */,
+				E1E2205228A1008500439DC4 /* CADPlateSearchView.xib in Resources */,
+				E1E2205B28A1008500439DC4 /* CADInformationCell.xib in Resources */,
+				E1E2205428A1008500439DC4 /* CADInformationHeadView.xib in Resources */,
 				E135B492288A4A4200BAB6D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,14 +587,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E2204F28A1008500439DC4 /* CADVehicleArchivesViewController.swift in Sources */,
 				E135B5DB288A6C2900BAB6D9 /* AppDelegate+launchOptions.m in Sources */,
+				E1E2205828A1008500439DC4 /* CADAddInsuranceTableViewCell.swift in Sources */,
+				E1E2209F28A1187000439DC4 /* UIViewController+HZBasetopView.m in Sources */,
+				E1E2205728A1008500439DC4 /* CADPlateSearchView.swift in Sources */,
 				E135B489288A4A4200BAB6D9 /* AppDelegate.m in Sources */,
+				E1E2204B28A1008500439DC4 /* CADVehicleArchivesDetailsViewController.swift in Sources */,
+				E1E2205328A1008500439DC4 /* CADVehicleDetailsHeadView.swift in Sources */,
 				E15FA98F289D51DE00E6BA56 /* QMUIConfigurationTemplateGrapefruit.m in Sources */,
 				E15FA98C289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.m in Sources */,
+				E1E2209D28A1187000439DC4 /* UIImage+HZCreateUseExt.m in Sources */,
 				E135B49A288A4A4300BAB6D9 /* main.m in Sources */,
 				E15FA98E289D51DE00E6BA56 /* QMUIConfigurationTemplate.m in Sources */,
+				E1E2205C28A1008500439DC4 /* CADInformationCell.swift in Sources */,
+				E1E2204A28A1008500439DC4 /* CADVehicleDetailsViewModel.swift in Sources */,
 				E15FA990289D51DE00E6BA56 /* QMUIConfigurationTemplatePinkRose.m in Sources */,
+				E1E2205928A1008500439DC4 /* CADInfoInsureTableViewCell.swift in Sources */,
+				E1E2206128A1008500439DC4 /* CADVehicleArchivesTableViewCell.swift in Sources */,
+				E1E2205A28A1008500439DC4 /* CADVehicleInfoTableViewCell.swift in Sources */,
+				E1E2205028A1008500439DC4 /* CADVehicleDetailsModel.swift in Sources */,
 				E15FA98B289D51DE00E6BA56 /* QMUIConfigurationTemplateGrass.m in Sources */,
+				E1E2209E28A1187000439DC4 /* UINavigationBar+HZCreateUseExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +770,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -652,6 +805,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = com.ccdt.SmartServiceCloud;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartServiceCloud/SmartServiceCloud-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -686,6 +841,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = com.ccdt.SmartServiceCloud;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartServiceCloud/SmartServiceCloud-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -694,6 +851,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38E1D89742BDE8700E11539B /* Pods-SmartServiceCloudTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -713,6 +871,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83EEA5D898B9FB1930F9648A /* Pods-SmartServiceCloudTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -732,6 +891,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E217897395083EFCB6295E6E /* Pods-SmartServiceCloud-SmartServiceCloudUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JK6DU7A7HA;
@@ -749,6 +909,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DC755EEB7080CEE85843CB8 /* Pods-SmartServiceCloud-SmartServiceCloudUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JK6DU7A7HA;

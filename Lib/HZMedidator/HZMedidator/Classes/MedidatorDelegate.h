@@ -21,6 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(void)loadLoginVC;
 
+///下面的方法只是为了看看多年前写过的UI效果
+/****
+ *跳转到主工程下的车辆管理VC
+ */
+-(void)goToVehicleArchivesVC;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -14,5 +14,6 @@
 #import <MJExtension/MJExtension.h>
 #import <Masonry/Masonry.h>
 #import "UIAlertController+Extend.h"
+#import "UIView+HZGradient.h"
 
 #endif /* HZOCLib_h */

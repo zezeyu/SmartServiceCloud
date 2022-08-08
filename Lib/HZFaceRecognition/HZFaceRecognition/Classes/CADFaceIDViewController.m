@@ -328,7 +328,7 @@
     if ([self.outPutSetting isEqualToNumber:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange]] || [self.outPutSetting isEqualToNumber:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange]]) {
         CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
         
-        if ([captureOutput isEqual:self.videoDataOutput]) {
+        if ([captureOutput isEqual:_videoDataOutput]) {
             // 身份证信息识别
             UIImage * image = [UIImage getImageStream:imageBuffer];
             [self play_face_scan_sound];

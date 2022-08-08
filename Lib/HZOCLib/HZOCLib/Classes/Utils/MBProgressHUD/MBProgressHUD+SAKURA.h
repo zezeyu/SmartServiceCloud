@@ -6,7 +6,7 @@
 //  Copyright © 2015 4c. All rights reserved.
 //
 
-#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 #define SEC   1.5
 
 @interface MBProgressHUD (SAKURA)

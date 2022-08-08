@@ -27,6 +27,13 @@ target 'SmartServiceCloud' do
   pod 'IQKeyboardManager', '~> 6.5.10'
   pod 'Then'
   pod 'SnapKit'
+  
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+#  pod 'RxDataSources',    '~> 2.0.2'
+  pod 'ObjectMapper'
+  pod 'ReusableKit'
+  pod 'Moya/RxSwift'
 
   target 'SmartServiceCloudTests' do
     inherit! :search_paths

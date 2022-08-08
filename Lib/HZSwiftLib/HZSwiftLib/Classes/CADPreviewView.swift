@@ -11,21 +11,6 @@ import AVFoundation
 import Then
 import SnapKit
 import HZOCLib
-///RGB颜色转换
-func RGB(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
-    
-    return UIColor (red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1)
-}
-///全屏宽
-let kScreenWidth = UIScreen.main.bounds.width
-///全屏高
-let kScreenHeight = UIScreen.main.bounds.height
-///获取状态栏的高度
-let kStatusBarHeight = UIApplication.shared.statusBarFrame.size.height
-///获取导航栏的高度
-let kNavBarHeight:CGFloat = 44.0
-///获取整个导航栏的高度 （状态栏加导航栏）
-let kTopHeight = (kStatusBarHeight + kNavBarHeight)
 
 /**人脸识别线圈的颜色*/
 let faceBorderColor = RGB(r: 5, g: 213, b: 255)
@@ -156,52 +141,6 @@ extension CADPreviewView {
     
 }
 
-extension CGFloat {
-    var wr:CGFloat {
-        get {
-            return self * Screen.widthRatio
-        }
-    }
-    var hr:CGFloat {
-        get {
-            return self * Screen.heightRatio
-        }
-    }
-}
-extension Int {
-    var wr:CGFloat {
-        get {
-            return CGFloat(self) * Screen.widthRatio
-        }
-    }
-    var hr:CGFloat {
-        get {
-            return CGFloat(self) * Screen.heightRatio
-        }
-    }
-    var cg:CGFloat {
-        get {
-            return CGFloat(self)
-        }
-    }
-}
-extension Double {
-    var wr:CGFloat {
-        get {
-            return CGFloat(self) * Screen.widthRatio
-        }
-    }
-    var hr:CGFloat {
-        get {
-            return CGFloat(self) * Screen.heightRatio
-        }
-    }
-    var cg:CGFloat {
-        get {
-            return CGFloat(self)
-        }
-    }
-}
 class Screen {
     
     static let width = UIScreen.main.bounds.width
@@ -225,13 +164,4 @@ class Screen {
         }
     }
     
-}
-extension UIColor {
-    
-    //根据16进制RGB值快速创建颜色对象
-    public convenience init(hex:Int) {
-        self.init(red: CGFloat((hex & 0xFF0000) >> 16) / 255.0, green: CGFloat((hex & 0xFF00) >> 8) / 255.0, blue: CGFloat(hex & 0xFF) / 255.0, alpha: 1.0)
-    }
-    //主色调，蓝色
-    static let MainColor = UIColor(hex: 0x36A4F1)
 }

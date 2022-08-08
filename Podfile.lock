@@ -14,10 +14,12 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Alamofire (4.9.1)
   - HZFaceRecognition (0.1.0):
     - HZOCLib
     - HZSwiftLib
   - HZHome (0.1.0):
+    - HZMedidator
     - HZOCLib
   - HZLogin (0.1.0):
     - HZFaceRecognition
@@ -51,6 +53,13 @@ PODS:
   - MBProgressHUD (1.2.0)
   - MJExtension (3.4.1)
   - MJRefresh (3.7.5)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - ObjectMapper (4.2.0)
   - QMUIKit (4.4.3):
     - QMUIKit/QMUIComponents (= 4.4.3)
     - QMUIKit/QMUICore (= 4.4.3)
@@ -347,6 +356,13 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (4.4.3)
   - QMUIKit/QMUIWeakObjectContainer (4.4.3)
+  - Result (4.1.0)
+  - ReusableKit (3.0.0):
+    - ReusableKit/Core (= 3.0.0)
+  - ReusableKit/Core (3.0.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
   - SDWebImage (5.13.0):
     - SDWebImage/Core (= 5.13.0)
   - SDWebImage/Core (5.13.0)
@@ -370,7 +386,12 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.2.0)
   - MJExtension (~> 3.4.1)
   - MJRefresh (~> 3.7.5)
+  - Moya/RxSwift
+  - ObjectMapper
   - QMUIKit (~> 4.4.3)
+  - ReusableKit
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - SDWebImage (~> 5.13.0)
   - SnapKit
   - Then
@@ -378,12 +399,19 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Alamofire
     - IQKeyboardManager
     - Masonry
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - Moya
+    - ObjectMapper
     - QMUIKit
+    - Result
+    - ReusableKit
+    - RxCocoa
+    - RxSwift
     - SDWebImage
     - SnapKit
     - Then
@@ -412,8 +440,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   HZFaceRecognition: 3439c2cf8746563f19ee4f2981047a0abb0b02d2
-  HZHome: f7e6bf2ea5da791a84d970b49debf9595b2da13c
+  HZHome: 9531e1637760ec43ef2690d547ad613f8d550817
   HZLogin: 2cdddcb2350547d21cf0b8494ab6a6d015e629ee
   HZMain: a7f85f2f7cae2c8eaa2aca2bf16243c38019483c
   HZMedidator: c235e27b360d81210712f4f1d98fae3926088af0
@@ -427,11 +456,17 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   QMUIKit: 5da6e59d5d312681ee45706af42fd3af7b4f55eb
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SDWebImage: 0327043dbb9533e75f2eff8445b3df0f2ceca6ac
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: ad5d83c6f07f51063913b28dfb37e5864728b364
+PODFILE CHECKSUM: a82b3e7bc928697d32cfe5fb2709f35c29eb1981
 
 COCOAPODS: 1.11.3
