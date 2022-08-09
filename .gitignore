@@ -22,3 +22,4 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 Pods/
+node_modules/

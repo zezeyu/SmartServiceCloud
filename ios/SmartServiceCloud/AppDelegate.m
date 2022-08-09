@@ -13,7 +13,7 @@
 #import <HZMedidator.h>
 #import <HZMain/HZMainTabBarVC.h>
 #import <HZLogin/HZLoginVC.h>
-#import "SmartServiceCloud-Swift.h"
+
 @interface AppDelegate ()<MedidatorDelegate>
 
 @end
@@ -72,8 +72,7 @@
 }
 #pragma --mark 跳转到push转场动画的页面
 -(void)goToVehicleArchivesVC{
-    CADVehicleArchivesViewController *vc = [CADVehicleArchivesViewController new];
-    [[UIViewController currentViewController].navigationController pushViewController:vc animated:YES];
+    
 }
 
 @end
