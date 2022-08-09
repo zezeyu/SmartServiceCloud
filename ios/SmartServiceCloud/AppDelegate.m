@@ -10,6 +10,10 @@
 #import "AppDelegate+launchOptions.h"
 #import <HZThemeManager.h>
 #import "QMUIConfigurationTemplate.h"
+#import "QMUIConfigurationTemplateGrapefruit.h"
+#import "QMUIConfigurationTemplateGrass.h"
+#import "QMUIConfigurationTemplatePinkRose.h"
+#import "QMUIConfigurationTemplateDark.h"
 #import <HZMedidator.h>
 #import <HZMain/HZMainTabBarVC.h>
 #import <HZLogin/HZLoginVC.h>
@@ -27,9 +31,29 @@
     
     // 2. 然后设置主题的生成器
     QMUIThemeManagerCenter.defaultThemeManager.themeGenerator = ^__kindof NSObject * _Nonnull(NSString * _Nonnull identifier) {
-        if ([identifier isEqualToString:QDThemeIdentifierDefault]) return [QMUIConfigurationTemplate new];
+        if ([identifier isEqualToString:QDThemeIdentifierDefault]) return QMUIConfigurationTemplate.new;
+        if ([identifier isEqualToString:QDThemeIdentifierGrapefruit]) return QMUIConfigurationTemplateGrapefruit.new;
+        if ([identifier isEqualToString:QDThemeIdentifierGrass]) return QMUIConfigurationTemplateGrass.new;
+        if ([identifier isEqualToString:QDThemeIdentifierPinkRose]) return QMUIConfigurationTemplatePinkRose.new;
+        if ([identifier isEqualToString:QDThemeIdentifierDark]) return QMUIConfigurationTemplateDark.new;
         return nil;
     };
+    // 3. 再针对 iOS 13 开启自动响应系统的 Dark Mode 切换
+    // 如果不需要这个功能，则不需要这一段代码
+    if (@available(iOS 13.0, *)) {
+        if (QMUIThemeManagerCenter.defaultThemeManager.currentThemeIdentifier) {
+            QMUIThemeManagerCenter.defaultThemeManager.identifierForTrait = ^__kindof NSObject<NSCopying> * _Nonnull(UITraitCollection * _Nonnull trait) {
+                if (trait.userInterfaceStyle == UIUserInterfaceStyleDark) {
+                    return QDThemeIdentifierDark;
+                }
+                if ([QMUIThemeManagerCenter.defaultThemeManager.currentThemeIdentifier isEqual:QDThemeIdentifierDark]) {
+                    return QDThemeIdentifierDefault;
+                }
+                return QMUIThemeManagerCenter.defaultThemeManager.currentThemeIdentifier;
+            };
+            QMUIThemeManagerCenter.defaultThemeManager.respondsSystemStyleAutomatically = YES;
+        }
+    }
     
     // QD自定义的全局样式渲染
     [QDCommonUI renderGlobalAppearances];
