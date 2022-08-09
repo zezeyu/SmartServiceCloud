@@ -16,6 +16,9 @@ PODS:
     - AFNetworking/NSURLSession
   - Alamofire (4.9.1)
   - boost (1.76.0)
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.68.2)
   - FBReactNativeSpec (0.68.2):
@@ -33,6 +36,7 @@ PODS:
   - HZHome (0.1.0):
     - HZMedidator
     - HZOCLib
+    - SDCycleScrollView (>= 1.82)
   - HZLogin (0.1.0):
     - HZFaceRecognition
     - HZMedidator
@@ -52,6 +56,7 @@ PODS:
     - MBProgressHUD (~> 1.2.0)
     - MJExtension (~> 3.4.1)
     - QMUIKit (~> 4.4.3)
+    - SVGKit
   - HZSwiftLib (0.1.0):
     - HZOCLib
     - SnapKit
@@ -647,10 +652,14 @@ PODS:
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
   - SDWebImage (5.13.0):
     - SDWebImage/Core (= 5.13.0)
   - SDWebImage/Core (5.13.0)
   - SnapKit (5.6.0)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
   - Then (3.0.0)
   - Yoga (1.14.0)
 
@@ -709,8 +718,10 @@ DEPENDENCIES:
   - ReusableKit
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - SDCycleScrollView (>= 1.82)
   - SDWebImage (~> 5.13.0)
   - SnapKit
+  - SVGKit
   - Then
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -718,6 +729,7 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - Alamofire
+    - CocoaLumberjack
     - fmt
     - IQKeyboardManager
     - Masonry
@@ -731,8 +743,10 @@ SPEC REPOS:
     - ReusableKit
     - RxCocoa
     - RxSwift
+    - SDCycleScrollView
     - SDWebImage
     - SnapKit
+    - SVGKit
     - Then
 
 EXTERNAL SOURCES:
@@ -823,18 +837,19 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   boost: a7c83b31436843459a1961bfd74b96033dc77234
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
   FBLazyVector: a7a655862f6b09625d11c772296b01cd5164b648
   FBReactNativeSpec: 81ce99032d5b586fddd6a38d450f8595f7e04be4
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 476ee3e89abb49e07f822b48323c51c57124b572
   HZFaceRecognition: 3439c2cf8746563f19ee4f2981047a0abb0b02d2
-  HZHome: 9531e1637760ec43ef2690d547ad613f8d550817
+  HZHome: e7ad8ad7f13c85602b1f6dbc4850ef026d80be92
   HZLogin: 2cdddcb2350547d21cf0b8494ab6a6d015e629ee
   HZMain: a7f85f2f7cae2c8eaa2aca2bf16243c38019483c
   HZMedidator: c235e27b360d81210712f4f1d98fae3926088af0
   HZMine: c4a0a92ede72e07da10222f7f26af919d23c192e
-  HZOCLib: 1a3c41b49a968e63cc1e6b5e2f036b7d1f37663b
+  HZOCLib: 4b9e26fa89a98057bdb358826c5bc470bbe2d5df
   HZSwiftLib: fe7c3d50ec3ca6a3c776c03d590e4085e094a778
   HZThemeManager: 6ea143726910dce6ca3007343653bc81afe39a3d
   HZUserManager: 23d5e7e078d20b3a46e766ca5b65ff576bc2976d
@@ -875,11 +890,13 @@ SPEC CHECKSUMS:
   ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
   SDWebImage: 0327043dbb9533e75f2eff8445b3df0f2ceca6ac
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   Yoga: 99652481fcd320aefa4a7ef90095b95acd181952
 
-PODFILE CHECKSUM: 3a6c7503c228ec38468ab8c645d42d65f68de881
+PODFILE CHECKSUM: 33ecd13be1ba1bc84341542d02aee119b0cd8a27
 
 COCOAPODS: 1.11.3

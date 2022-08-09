@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HZHomeVC : QDCommonListViewController
+@interface HZHomeVC : QDCommonViewController
 
 @end
 

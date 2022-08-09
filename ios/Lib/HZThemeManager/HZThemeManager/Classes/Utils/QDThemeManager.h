@@ -28,6 +28,7 @@
 @property(class, nonatomic, strong, readonly) UIColor *qd_codeColor;
 @property(class, nonatomic, strong, readonly) UIColor *qd_separatorColor;
 @property(class, nonatomic, strong, readonly) UIColor *qd_gridItemTintColor;
+@property(class, nonatomic, strong, readonly) UIColor *qd_iconColor;
 @end
 
 @interface UIImage (QDTheme)

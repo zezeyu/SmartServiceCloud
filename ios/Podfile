@@ -37,6 +37,8 @@ target 'SmartServiceCloud' do
   pod 'IQKeyboardManager', '~> 6.5.10'
   pod 'Then'
   pod 'SnapKit'
+  pod 'SVGKit'
+  pod 'SDCycleScrollView','>= 1.82'
   
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'

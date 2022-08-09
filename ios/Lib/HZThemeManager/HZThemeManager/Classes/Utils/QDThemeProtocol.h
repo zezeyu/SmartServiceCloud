@@ -46,6 +46,9 @@
 /// App 首页每个单元格的颜色
 - (UIColor *)themeGridItemTintColor;
 
+/// 图标的颜色
+- (UIColor *)themeIconColor;
+
 - (NSString *)themeName;
 
 @end

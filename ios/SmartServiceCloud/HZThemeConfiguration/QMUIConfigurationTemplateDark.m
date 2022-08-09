@@ -20,6 +20,9 @@
     QMUICMI.navBarBackgroundImage = nil;
     QMUICMI.navBarStyle = UIBarStyleBlack;
     
+    QMUICMI.navBarTintColor = UIColorWhite;
+    QMUICMI.navBarTitleColor = NavBarTintColor;
+    
     QMUICMI.tabBarBackgroundImage = nil;
     QMUICMI.tabBarShadowImageColor = [UIColor qmui_colorWithThemeProvider:^UIColor * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, __kindof NSObject<NSCopying> * _Nullable identifier, NSObject<QDThemeProtocol> *theme) {
         return theme.themeSeparatorColor;
@@ -84,6 +87,10 @@
 
 - (UIColor *)themeSeparatorColor {
     return UIColorMake(46, 50, 54);
+}
+
+-(UIColor *)themeIconColor{
+    return UIColorWhite;
 }
 
 - (NSString *)themeName {

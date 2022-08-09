@@ -40,4 +40,5 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'HZOCLib'
    s.dependency 'HZMedidator'
+   s.dependency 'SDCycleScrollView','>= 1.82'
 end

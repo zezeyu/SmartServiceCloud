@@ -44,4 +44,5 @@ TODO: Add long description of the pod here.
    s.dependency 'MBProgressHUD', '~> 1.2.0'
    s.dependency 'MJExtension', '~> 3.4.1'
    s.dependency 'Masonry', '~> 1.1.0'
+   s.dependency 'SVGKit'
 end

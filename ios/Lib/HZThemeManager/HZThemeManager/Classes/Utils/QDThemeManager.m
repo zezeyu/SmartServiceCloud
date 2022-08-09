@@ -21,6 +21,7 @@
 @property(nonatomic, strong) UIColor *qd_codeColor;
 @property(nonatomic, strong) UIColor *qd_separatorColor;
 @property(nonatomic, strong) UIColor *qd_gridItemTintColor;
+@property(nonatomic, strong) UIColor *qd_iconColor;
 
 @property(nonatomic, strong) UIImage *qd_navigationBarBackgroundImage;
 @property(nonatomic, strong) UIImage *qd_navigationBarBackIndicatorImage;
@@ -86,6 +87,9 @@
         }];
         self.qd_gridItemTintColor = [UIColor qmui_colorWithThemeProvider:^UIColor * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, NSObject<QDThemeProtocol> * _Nullable theme) {
             return theme.themeGridItemTintColor;
+        }];
+        self.qd_iconColor = [UIColor qmui_colorWithThemeProvider:^UIColor * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, NSObject<QDThemeProtocol> * _Nullable theme) {
+            return theme.themeIconColor;
         }];
         
         self.qd_navigationBarBackgroundImage = [UIImage qmui_imageWithThemeProvider:^UIImage * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, __kindof NSObject<NSCopying> * _Nullable identifier, NSObject<QDThemeProtocol> * _Nullable theme) {
@@ -176,6 +180,9 @@
 
 + (UIColor *)qd_gridItemTintColor {
     return QDThemeManager.sharedInstance.qd_gridItemTintColor;
+}
++(UIColor *)qd_iconColor{
+    return QDThemeManager.sharedInstance.qd_iconColor;
 }
 
 @end

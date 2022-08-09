@@ -15,5 +15,6 @@
 #import <Masonry/Masonry.h>
 #import "UIAlertController+Extend.h"
 #import "UIView+HZGradient.h"
+#import "UIImage+HZSVGKit.h"
 
 #endif /* HZOCLib_h */

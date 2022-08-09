@@ -5,12 +5,11 @@
       "scale" : "1x"
     },
     {
-      "filename" : "vehicle_bluePlate@2x.png",
+      "filename" : "hz_directory_icon.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "vehicle_bluePlate@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -39,7 +39,10 @@
 #define UIColorTheme7 UIColorMake(90, 154, 239) // Blue Jeans
 #define UIColorTheme8 UIColorMake(172, 143, 239) // Lavender
 #define UIColorTheme9 UIColorMake(238, 133, 193) // Pink Rose
-#define UIColorTheme10 UIColorMake(39, 192, 243) // Dark
+#define UIColorTheme10 UIColorMake(169, 58, 50) // Dark
+#define UIColorTheme11 UIColorMake(236, 92, 87) // 网易云的背景色是白色
+
+#define MainCorner 7
 
 extern NSString *const QDSelectedThemeIdentifier;
 extern NSString *const QDThemeIdentifierDefault;

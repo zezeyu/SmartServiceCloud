@@ -89,7 +89,7 @@
     QMUICMI.navBarShadowImageColor = UIColorClear;                              // NavBarShadowImageColor : UINavigationBar.shadowImage 的颜色，如果为 nil，则使用 NavBarShadowImage 的值，如果 NavBarShadowImage 也为 nil，则使用系统默认的分隔线。如果不为 nil，而 NavBarShadowImage 为 nil，则自动创建一张 1px 高的图并将其设置为 NavBarShadowImageColor 的颜色然后设置上去，如果 NavBarShadowImage 不为 nil 且 renderingMode 不为 UIImageRenderingModeAlwaysOriginal，则将 NavBarShadowImage 设置为 NavBarShadowImageColor 的颜色然后设置上去。
     QMUICMI.navBarBarTintColor = nil;                                           // NavBarBarTintColor : UINavigationBar.barTintColor，也即背景色
     QMUICMI.navBarStyle = UIBarStyleDefault;                                    // NavBarStyle : UINavigationBar 的 barStyle
-    QMUICMI.navBarTintColor = UIColorWhite;                                     // NavBarTintColor : NavBarContainerClasses 里的 UINavigationBar 的 tintColor，也即导航栏上面的按钮颜色
+    QMUICMI.navBarTintColor = UIColorBlack;                                     // NavBarTintColor : NavBarContainerClasses 里的 UINavigationBar 的 tintColor，也即导航栏上面的按钮颜色
     QMUICMI.navBarTitleColor = NavBarTintColor;                                 // NavBarTitleColor : UINavigationBar 的标题颜色，以及 QMUINavigationTitleView 的默认文字颜色
     QMUICMI.navBarTitleFont = UIFontBoldMake(17);                               // NavBarTitleFont : UINavigationBar 的标题字体，以及 QMUINavigationTitleView 的默认字体
     QMUICMI.navBarLargeTitleColor = nil;                                        // NavBarLargeTitleColor : UINavigationBar 在大标题模式下的标题颜色
@@ -150,7 +150,7 @@
     
     QMUICMI.searchBarTextFieldBackgroundImage = UIImage.qd_searchBarTextFieldBackgroundImage;       // SearchBarTextFieldBackgroundImage : QMUISearchBar 里的文本框的背景图，图片高度会决定输入框的高度
     QMUICMI.searchBarTextFieldBorderColor = nil;                                // SearchBarTextFieldBorderColor : QMUISearchBar 里的文本框的边框颜色
-    QMUICMI.searchBarTextFieldCornerRadius = 4.0;                               // SearchBarTextFieldCornerRadius : QMUISearchBar 里的文本框的圆角大小，-1 表示圆角大小为输入框高度的一半
+    QMUICMI.searchBarTextFieldCornerRadius = -1;                               // SearchBarTextFieldCornerRadius : QMUISearchBar 里的文本框的圆角大小，-1 表示圆角大小为输入框高度的一半
     QMUICMI.searchBarBackgroundImage = UIImage.qd_searchBarBackgroundImage;     // SearchBarBackgroundImage : 搜索框的背景图，如果需要设置底部分隔线的颜色也请绘制到图片里
     QMUICMI.searchBarTintColor = UIColor.qd_tintColor;                          // SearchBarTintColor : QMUISearchBar 的 tintColor，也即上面的操作控件的主题色
     QMUICMI.searchBarTextColor = UIColor.qd_titleTextColor;                                  // SearchBarTextColor : QMUISearchBar 里的文本框的文字颜色
@@ -326,7 +326,7 @@
 }
 
 - (UIColor *)themeTintColor {
-    return UIColorTheme9;
+    return UIColorTheme11;
 }
 
 - (UIColor *)themeTitleTextColor {
@@ -355,6 +355,10 @@
 
 - (UIColor *)themeGridItemTintColor {
     return self.themeTintColor;
+}
+
+-(UIColor *)themeIconColor{
+    return UIColorBlack;
 }
 
 - (NSString *)themeName {

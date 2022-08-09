@@ -8,38 +8,90 @@
 #import "HZHomeVC.h"
 #import <HZOCLib/HZOCLib.h>
 #import <HZMedidator/HZMedidator.h>
-#define k2017 @"2017年不规则按钮（OC）"
-#define k2018 @"2018年写的push转场动画（Swift）"
-#define k2018_2 @"2018年写的自定义导航栏（OC）"
-#define k2019 @"2019开始学习架构(ArcGIS项目)"
-#define k2020 @"2020开始了项目管理"
-#define k2020_2 @"2020年开始撸前端"
-#define k2021 @"2021原型已经画的很6了"
-#define k2022 @"2022年开始了物联网项目"
-
+#import "HZHomeVM.h"
+#import "HZHomeView.h"
 @interface HZHomeVC ()
-
+@property(nonatomic,strong)QMUINavigationButton *leftButton;//目录
+@property(nonatomic,strong)QMUINavigationButton *rightButton;//话筒
+@property(nonatomic,strong)QMUISearchBar *searchBar;
+@property(nonatomic,strong)HZHomeView *homeView;
 @end
 
 @implementation HZHomeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"首页";
-    self.dataSource = @[k2017,k2018,k2018_2,k2019,k2020,k2020_2,k2021,k2022];
+    [self initNavigationBar];
+    [self initUI];
+    //注册管家事件回调
+    [self loadManagerEventBlock];
+    //让管家去拿数据
+    [[HZHomeVM instance]loadData];
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-
+-(void)initNavigationBar{
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem qmui_itemWithButton:self.leftButton target:self action:@selector(onClickDirectory)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem qmui_itemWithButton:self.rightButton target:self action:@selector(onClickMicrophone)];
+    self.navigationItem.titleView = self.searchBar;
 }
 
--(void)didSelectCellWithTitle:(NSString *)title{
-    if ([title isEqualToString:k2018]) {
-        if ([[HZMedidator shardInstance].delegate respondsToSelector:@selector(goToVehicleArchivesVC)]) {
-            [[HZMedidator shardInstance].delegate goToVehicleArchivesVC];
+-(void)initUI{
+    [self.view addSubview:self.homeView];
+    [_homeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(NavigationContentTop);
+        make.left.right.bottom.equalTo(self.view);
+    }];
+}
+
+-(void)loadManagerEventBlock{
+    weakify(self);
+    [[HZHomeVM instance]home_ManagerEvent_Block:^(home_ManagerEvent event) {strongify(self);
+        if (event == cycleScrollDataComplete) {
+            [self.homeView reloadData];
         }
-    }
+    }];
 }
 
+- (nullable UIImage *)qmui_navigationBarBackgroundImage{
+    if ([QMUIThemeManagerCenter.defaultThemeManager.currentThemeIdentifier isEqual:QDThemeIdentifierDark]) {
+        return [UIImage qmui_imageWithColor:self.view.backgroundColor];
+    }
+    return [UIImage qmui_imageWithColor:UIColor.whiteColor];
+}
+
+#pragma --mark 方法实现
+-(void)onClickDirectory{
+    
+}
+-(void)onClickMicrophone{
+    
+}
+#pragma --mark 懒加载
+-(QMUINavigationButton *)leftButton{
+    if (!_leftButton) {
+        _leftButton = [[QMUINavigationButton alloc]initWithImage:[UIImage svgImageNamed:@"hz_directory_icon" size:CGSizeMake(30, 30) objColor:UIColor.qd_iconColor]];
+    }
+    return _leftButton;
+}
+
+-(QMUINavigationButton *)rightButton{
+    if (!_rightButton) {
+        _rightButton = [[QMUINavigationButton alloc]initWithImage:[UIImage svgImageNamed:@"hz_microphone" size:CGSizeMake(30, 30) objColor:UIColor.qd_iconColor]];
+    }
+    return _rightButton;
+}
+
+-(QMUISearchBar *)searchBar{
+    if (!_searchBar) {
+        _searchBar = [[QMUISearchBar alloc]init];
+        _searchBar.placeholder = @"周杰伦";
+    }
+    return _searchBar;
+}
+-(HZHomeView *)homeView{
+    if (!_homeView) {
+        _homeView = [[HZHomeView alloc]init];
+    }
+    return _homeView;
+}
 @end
