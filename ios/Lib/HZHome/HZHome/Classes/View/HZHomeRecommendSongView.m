@@ -92,7 +92,7 @@
 -(QMUIButton *)moreButton{
     if (!_moreButton) {
         _moreButton = [[QMUIButton alloc]init];
-        _moreButton.text = @"更多 >";
+        [_moreButton setTitle:@"更多 >" forState:UIControlStateNormal];
         [_moreButton setTitleColor:UIColor.qd_mainTextColor forState:UIControlStateNormal];
         _moreButton.titleLabel.font = TEXT_FONT;
         _moreButton.borderWidth = 1;

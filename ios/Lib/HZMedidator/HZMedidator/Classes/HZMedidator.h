@@ -15,12 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shardInstance;
 
--(void)initAppWithWindow:(UIWindow *)window;
-
--(void)loadLoginVC:(UIWindow *)window;
-
--(void)loadMainTabBar:(UIWindow *)window;
-
 @end
 
 NS_ASSUME_NONNULL_END

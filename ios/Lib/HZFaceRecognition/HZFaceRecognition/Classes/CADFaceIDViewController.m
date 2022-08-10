@@ -347,11 +347,13 @@
 //                        [self.navigationController pushViewController:resultVc animated:YES];
 //                    });
             } else {
-                if (self.faceImage != nil) {
-                    self.faceImage([image imageRotation:UIImageOrientationRight]);
-                }
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self dismissViewControllerAnimated:NO completion:nil];
+                weakify(self);
+                dispatch_async(dispatch_get_main_queue(), ^{strongify(self);
+                    [self dismissViewControllerAnimated:YES completion:^{
+                        if (self.faceImage != nil) {
+                            self.faceImage([image imageRotation:UIImageOrientationRight]);
+                        }
+                    }];
                 });
             }
             // 身份证信息识别完毕后，就将videoDataOutput的代理去掉，防止频繁调用AVCaptureVideoDataOutputSampleBufferDelegate方法而引起的“混乱”

@@ -49,12 +49,13 @@
         }
     };
     QDNavigationController * nav = [[QDNavigationController alloc]initWithRootViewController:faceIDVC];
+    nav.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:nav animated:YES completion:nil];
 }
 -(QMUIButton *)loginButton{
     if (!_loginButton) {
         _loginButton = [[QMUIButton alloc]init];
-        _loginButton.text = @"登录";
+        [_loginButton setTitle:@"登录" forState:UIControlStateNormal];
         _loginButton.cornerRadius = 35;
         [_loginButton setTitleColor:UIColorWhite forState:UIControlStateNormal];
         [_loginButton addTarget:self action:@selector(onClickLoginAction:) forControlEvents:UIControlEventTouchUpInside];

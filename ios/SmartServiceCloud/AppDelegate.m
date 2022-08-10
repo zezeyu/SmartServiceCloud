@@ -17,7 +17,7 @@
 #import <HZMedidator.h>
 #import <HZMain/HZMainTabBarVC.h>
 #import <HZLogin/HZLoginVC.h>
-
+#import <HZUserManager/HZUserManager.h>
 @interface AppDelegate ()<MedidatorDelegate>
 
 @end
@@ -63,7 +63,11 @@
     [self.window makeKeyAndVisible];
     
     [HZMedidator shardInstance].delegate = self;
-    [[HZMedidator shardInstance] initAppWithWindow:self.window];
+    if ([HZUserManager instance].isLogin) {
+        [self loadMainTabBar];
+    }else{
+        [self loadLoginVC];
+    }
     
     return YES;
 }
@@ -88,11 +92,15 @@
 
 #pragma --mark 加载登录页面
 - (void)loadLoginVC {
-    [[HZMedidator shardInstance]loadLoginVC:self.window];
+    self.window.rootViewController = nil;
+    self.window.rootViewController = [[HZLoginVC alloc]init];
 }
 #pragma --mark 加载主工程
 - (void)loadMainTabBar {
-    [[HZMedidator shardInstance]loadMainTabBar:self.window];
+    self.window.rootViewController = nil;
+    HZMainTabBarVC *vc = [[HZMainTabBarVC alloc] init];
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
 }
 #pragma --mark 跳转到push转场动画的页面
 -(void)goToVehicleArchivesVC{

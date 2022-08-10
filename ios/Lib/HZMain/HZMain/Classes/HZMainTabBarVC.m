@@ -15,9 +15,8 @@
 
 @implementation HZMainTabBarVC
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void)didInitialize{
+    [super didInitialize];
     [self initVC];
 }
 

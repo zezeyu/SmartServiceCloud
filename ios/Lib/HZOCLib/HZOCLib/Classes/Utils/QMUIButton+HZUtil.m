@@ -117,12 +117,4 @@
     return image;
 }
 
--(NSString *)text{
-    return self.text;
-}
-
--(void)setText:(NSString *)text{
-    [self setTitle:text forState:UIControlStateNormal];
-}
-
 @end

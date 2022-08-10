@@ -30,8 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithImage:(id _Nullable)image selected_image:(id _Nullable)selected_image;
 -(id)backImage:(id)image;
 
-@property(nonatomic,strong)NSString * text;
-
 @end
 
 NS_ASSUME_NONNULL_END
