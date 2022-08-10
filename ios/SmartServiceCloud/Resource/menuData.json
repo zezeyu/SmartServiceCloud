@@ -1,0 +1,32 @@
+{
+    "menuData" :[
+        {
+            "menuImage" : "hz_calendar_icon",
+            "menuTitle" : "每日推荐"
+        },
+        {
+            "menuImage" : "hz_fm_icon",
+            "menuTitle" : "私人FM"
+        },
+        {
+            "menuImage" : "hz_songlist_icon",
+            "menuTitle" : "歌单"
+        },
+        {
+            "menuImage" : "hz_rankinglist_icon",
+            "menuTitle" : "排行榜"
+        },
+        {
+            "menuImage" : "hz_livestreaming_icon",
+            "menuTitle" : "直播"
+        },
+        {
+            "menuImage" : "hz_collection_icon",
+            "menuTitle" : "数字专辑"
+        },
+        {
+            "menuImage" : "hz_book_icon",
+            "menuTitle" : "有声书"
+        }
+    ]
+}

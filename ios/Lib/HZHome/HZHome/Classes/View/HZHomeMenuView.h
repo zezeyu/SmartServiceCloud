@@ -6,10 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <HZOCLib/HZOCLib.h>
+
 #import "HZHomeModel.h"
-#define cycleScrollInterval 15
-#define cycleScrollViewHeight (kScreenWidth - cycleScrollInterval * 2) * 142 / 365
+
+#define cycleScrollViewHeight (kScreenWidth - home_interval * 2) * 142 / 365
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HZHomeMenuViewCell : QMUITableViewCell

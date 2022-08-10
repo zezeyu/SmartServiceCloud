@@ -20,4 +20,21 @@
     ];
 }
 
+MJCodingImplementation
++ (NSDictionary *)mj_objectClassInArray{
+    return @{@"menuData" : [HZHomeMenuModel class],@"songList" : [HZHomeRecommendSondModel class]};
+}
+
+@end
+
+
+@implementation HZHomeMenuModel
+
+
+@end
+
+
+@implementation HZHomeRecommendSondModel
+
+
 @end

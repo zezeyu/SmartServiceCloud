@@ -6,8 +6,6 @@
 //
 
 #import "HZHomeVC.h"
-#import <HZOCLib/HZOCLib.h>
-#import <HZMedidator/HZMedidator.h>
 #import "HZHomeVM.h"
 #import "HZHomeView.h"
 @interface HZHomeVC ()
@@ -15,12 +13,15 @@
 @property(nonatomic,strong)QMUINavigationButton *rightButton;//话筒
 @property(nonatomic,strong)QMUISearchBar *searchBar;
 @property(nonatomic,strong)HZHomeView *homeView;
+@property(nonatomic, strong) QMUIPopupMenuView *popupByWindow;
 @end
 
 @implementation HZHomeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleThemeDidChangeNotification:) name:QMUIThemeDidChangeNotification object:nil]; //因为首页布局特殊，切换主题后需要刷新tabelview上的UICollectionView
+    
     [self initNavigationBar];
     [self initUI];
     //注册管家事件回调
@@ -53,10 +54,7 @@
 }
 
 - (nullable UIImage *)qmui_navigationBarBackgroundImage{
-    if ([QMUIThemeManagerCenter.defaultThemeManager.currentThemeIdentifier isEqual:QDThemeIdentifierDark]) {
-        return [UIImage qmui_imageWithColor:self.view.backgroundColor];
-    }
-    return [UIImage qmui_imageWithColor:UIColor.whiteColor];
+    return [UIImage qmui_imageWithColor:self.view.backgroundColor];
 }
 
 #pragma --mark 方法实现
@@ -66,6 +64,15 @@
 -(void)onClickMicrophone{
     
 }
+- (void)handleThemeDidChangeNotification:(NSNotification *)notification {
+    if ([[HZHomeVM instance].delegate respondsToSelector:@selector(reloadTableView)]) {
+        [[HZHomeVM instance].delegate reloadTableView];
+    }
+    if ([[HZHomeVM instance].delegate respondsToSelector:@selector(reloadCollectionView)]) {
+        [[HZHomeVM instance].delegate reloadCollectionView];
+    }
+}
+
 #pragma --mark 懒加载
 -(QMUINavigationButton *)leftButton{
     if (!_leftButton) {

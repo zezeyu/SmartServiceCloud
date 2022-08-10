@@ -38,7 +38,13 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+  s.prefix_header_contents = '#import "HZHome.h"'
    s.dependency 'HZOCLib'
+   s.dependency 'HZThemeManager'
    s.dependency 'HZMedidator'
+   s.dependency 'QMUIKit', '~> 4.4.3'
    s.dependency 'SDCycleScrollView','>= 1.82'
+   s.dependency 'MJExtension', '~> 3.4.1'
+   s.dependency 'MJRefresh', '~> 3.7.5'
+   s.dependency 'SDWebImage', '~> 5.13.0'
 end

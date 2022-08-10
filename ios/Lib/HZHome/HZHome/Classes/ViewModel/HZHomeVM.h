@@ -6,8 +6,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class HZHomeMenuModel;
+@class HZHomeRecommendSondModel;
 NS_ASSUME_NONNULL_BEGIN
+@protocol HZHomeVMDelegate <NSObject>
+
+@required
+
+@optional
+-(void)reloadTableView;
+
+-(void)reloadCollectionView;
+@end
+
 /**
  *首页管家的事件回调
  */
@@ -26,8 +37,15 @@ typedef void (^homeManagerBlock)(home_ManagerEvent event);
 
 + (instancetype)instance;
 
+@property(nonatomic,weak)id<HZHomeVMDelegate> delegate;
 /***首页轮播图数据*/
 @property(nonatomic,copy)NSArray *imagesURLStrings;
+
+/***menu的数据*/
+@property(nonatomic,copy)NSArray <HZHomeMenuModel *>*menus;
+
+/***推荐歌单的数据*/
+@property(nonatomic,copy)NSArray <HZHomeRecommendSondModel *>*recommendSongs;
 
 @property (nonatomic, copy) void (^managerBlock)(home_ManagerEvent event);
 /**

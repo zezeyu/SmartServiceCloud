@@ -161,7 +161,7 @@
         return UIColorMake(136, 136, 143);
     }];             // SearchBarPlaceholderColor : QMUISearchBar 里的文本框的 placeholder 颜色
     QMUICMI.searchBarFont = UIFontMake(15);                                                // SearchBarFont : QMUISearchBar 里的文本框的文字字体及 placeholder 的字体
-    QMUICMI.searchBarSearchIconImage = nil;                                     // SearchBarSearchIconImage : QMUISearchBar 里的放大镜 icon
+    QMUICMI.searchBarSearchIconImage = nil;                 // SearchBarSearchIconImage : QMUISearchBar 里的放大镜 icon
     QMUICMI.searchBarClearIconImage = nil;                                      // SearchBarClearIconImage : QMUISearchBar 里的文本框输入文字时右边的清空按钮的图片
     
 #pragma mark - Plain TableView
@@ -283,7 +283,7 @@
     QMUICMI.automaticCustomNavigationBarTransitionStyle = NO;                   // AutomaticCustomNavigationBarTransitionStyle : 界面 push/pop 时是否要自动根据两个界面的 barTintColor/backgroundImage/shadowImage 的样式差异来决定是否使用自定义的导航栏效果
     QMUICMI.supportedOrientationMask = UIInterfaceOrientationMaskAll;           // SupportedOrientationMask : 默认支持的横竖屏方向
     QMUICMI.automaticallyRotateDeviceOrientation = YES;                         // AutomaticallyRotateDeviceOrientation : 是否在界面切换或 viewController.supportedOrientationMask 发生变化时自动旋转屏幕
-    QMUICMI.defaultStatusBarStyle = UIStatusBarStyleLightContent;               // DefaultStatusBarStyle : 默认的状态栏样式，默认值为 UIStatusBarStyleDefault，也即在 iOS 12 及以前是黑色文字，iOS 13 及以后会自动根据当前 App 是否处于 Dark Mode 切换颜色。如果你希望固定为白色，请设置为 UIStatusBarStyleLightContent，固定黑色则设置为 QMUIStatusBarStyleDarkContent。
+    QMUICMI.defaultStatusBarStyle = QMUIStatusBarStyleDarkContent;               // DefaultStatusBarStyle : 默认的状态栏样式，默认值为 UIStatusBarStyleDefault，也即在 iOS 12 及以前是黑色文字，iOS 13 及以后会自动根据当前 App 是否处于 Dark Mode 切换颜色。如果你希望固定为白色，请设置为 UIStatusBarStyleLightContent，固定黑色则设置为 QMUIStatusBarStyleDarkContent。
     QMUICMI.needsBackBarButtonItemTitle = NO;                                   // NeedsBackBarButtonItemTitle : 全局是否需要返回按钮的 title，不需要则只显示一个返回image
     QMUICMI.hidesBottomBarWhenPushedInitially = YES;                            // HidesBottomBarWhenPushedInitially : QMUICommonViewController.hidesBottomBarWhenPushed 的初始值，默认为 NO，以保持与系统默认值一致，但通常建议改为 YES，因为一般只有 tabBar 首页那几个界面要求为 NO
     QMUICMI.preventConcurrentNavigationControllerTransitions = YES;             // PreventConcurrentNavigationControllerTransitions : 自动保护 QMUINavigationController 在上一次 push/pop 尚未结束的时候就进行下一次 push/pop 的行为，避免产生 crash
@@ -330,11 +330,11 @@
 }
 
 - (UIColor *)themeTitleTextColor {
-    return UIColorGray1;
+    return UIColorDarkGray5;
 }
 
 - (UIColor *)themeMainTextColor {
-    return UIColorGray3;
+    return UIColorMake(51, 51, 51);
 }
 
 - (UIColor *)themeDescriptionTextColor {

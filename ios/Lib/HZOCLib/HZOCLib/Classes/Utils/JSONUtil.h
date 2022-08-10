@@ -65,4 +65,7 @@
 
 +(nullable id)jsonParseWithJsonString:(NSString *)jsonString;
 
+/// 读取本地JSON文件
++ (NSDictionary *)readLocalFileWithName:(NSString *)name;
+
 @end

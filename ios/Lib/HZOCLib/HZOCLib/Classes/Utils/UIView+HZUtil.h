@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIView (HZUtil)
 
 @property(nonatomic,assign)IBInspectable CGFloat cornerRadius;
-@property(nonatomic,assign)IBInspectable UIColor *bolderColor;
-@property(nonatomic,assign)IBInspectable CGFloat bolderWidth;
+@property(nonatomic,assign)IBInspectable UIColor *borderColor;
+@property(nonatomic,assign)IBInspectable CGFloat borderWidth;
 
 -(void)addTapGestureTarget:(id)target action:(SEL)action;
 

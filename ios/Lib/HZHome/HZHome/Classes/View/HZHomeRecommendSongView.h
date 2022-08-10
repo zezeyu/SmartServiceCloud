@@ -6,10 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <HZOCLib/HZOCLib.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HZHomeRecommendSongView : UIView
+@interface HZHomeRecommendSongListCell : QMUITableViewCell
 
 @end
 

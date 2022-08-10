@@ -41,4 +41,6 @@ TODO: Add long description of the pod here.
    s.dependency 'HZFaceRecognition'
    s.dependency 'HZOCLib'
    s.dependency 'HZMedidator'
+   s.dependency 'QMUIKit', '~> 4.4.3'
+   s.dependency 'HZThemeManager'
 end

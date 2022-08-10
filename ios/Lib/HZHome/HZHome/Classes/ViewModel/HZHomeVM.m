@@ -28,6 +28,13 @@
     HZHomeModel *model = [[HZHomeModel alloc]init];
     _imagesURLStrings = model.imagesURLStrings;
     self.managerBlock(cycleScrollDataComplete);
+    
+    HZHomeModel *menuData = [HZHomeModel mj_objectWithKeyValues:[JSONUtil requestDataWithName:@"menuData"]];
+    _menus = menuData.menuData;
+    
+    HZHomeModel *songList = [HZHomeModel mj_objectWithKeyValues:[JSONUtil requestDataWithName:@"RecommendSongList"]];
+    _recommendSongs = songList.songList;
+    
 }
 
 @end

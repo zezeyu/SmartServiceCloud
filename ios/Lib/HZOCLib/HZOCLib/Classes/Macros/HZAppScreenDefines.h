@@ -66,6 +66,8 @@
 #define Border_Color [UIColor qmui_colorWithHexString:@"#e3e3e3"]
 //黑色文字
 #define text_blackColor [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1]
+//字体大小
+#define TEXT_FONT UIFontMake(14)
 
 #define kKeychainService [[NSBundle mainBundle] bundleIdentifier]
 

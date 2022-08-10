@@ -9,11 +9,10 @@
 #import <SDCycleScrollView/SDCycleScrollView.h>
 #import "HZHomeSongCell.h"
 
-@interface HZHomeMenuViewCell()<SDCycleScrollViewDelegate,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface HZHomeMenuViewCell()<SDCycleScrollViewDelegate,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,HZHomeVMDelegate>
 
 @property(nonatomic,strong)SDCycleScrollView *cycleScrollView;
 @property(nonatomic, strong) UICollectionView *collectionView;
-@property(nonatomic, strong, readonly) QMUICollectionViewPagingLayout *collectionViewLayout;
 
 @end
 
@@ -22,7 +21,7 @@
 - (instancetype)initForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initForTableView:tableView withStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-//        _collectionViewLayout = [[QMUICollectionViewPagingLayout alloc] initWithStyle:QMUICollectionViewPagingLayoutStyleDefault];
+        [HZHomeVM instance].delegate = self;
         [self initUI];
     }
     return self;
@@ -36,20 +35,21 @@
 }
 
 -(void)initUI{
-    [self addSubview:self.cycleScrollView];
+    [self.contentView addSubview:self.cycleScrollView];
     [_cycleScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(30);
-        make.left.mas_equalTo(cycleScrollInterval);
-        make.right.mas_equalTo(-cycleScrollInterval);
+        make.top.mas_equalTo(@10);
+        make.left.mas_equalTo(home_interval);
+        make.right.mas_equalTo(-home_interval);
         make.height.mas_equalTo(cycleScrollViewHeight);
     }];
-//    [self addSubview:self.collectionView];
-//    weakify(self);
-//    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {strongify(self);
-//        make.top.mas_equalTo(self.cycleScrollView.mas_bottom);
-//        make.left.right.mas_equalTo(@0);
-//        make.height.mas_equalTo(@200);
-//    }];
+    [self.contentView addSubview:self.collectionView];
+    weakify(self);
+    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {strongify(self);
+        make.top.mas_equalTo(self.cycleScrollView.mas_bottom).offset(home_interval);
+        make.left.right.mas_equalTo(@0);
+        make.height.mas_equalTo(@100);
+        make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(-10);
+    }];
 }
 
 
@@ -63,44 +63,46 @@
 }
 -(UICollectionView *)collectionView{
     if (!_collectionView) {
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewLayout];
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+        layout.minimumInteritemSpacing = 0;
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        layout.minimumLineSpacing = 0;
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.backgroundColor = UIColorClear;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-        [_collectionView registerClass:[HZHomeSongCell class] forCellWithReuseIdentifier:@"SongCell"];
+        [_collectionView registerClass:[HZHomeSongCell class] forCellWithReuseIdentifier:@"HZHomeSongCell"];
         [self addSubview:_collectionView];
     }
     return _collectionView;
 }
 
 #pragma mark - <UICollectionViewDelegate, UICollectionViewDataSource>
-
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return [HZHomeVM instance].menus.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    HZHomeSongCell *cell = (HZHomeSongCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    HZHomeSongCell *cell = (HZHomeSongCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:@"HZHomeSongCell" forIndexPath:indexPath];
+    cell.model = [HZHomeVM instance].menus[indexPath.item];
     return cell;
 }
 
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.collectionViewLayout.debug) {
-        return CGSizeMake(100, 100);
-    }
-    
-    if (@available(iOS 11.0, *)) {
-        CGSize size = CGSizeMake(CGRectGetWidth(collectionView.bounds) - UIEdgeInsetsGetHorizontalValue(self.collectionViewLayout.sectionInset) - UIEdgeInsetsGetHorizontalValue(self.collectionView.adjustedContentInset), CGRectGetHeight(collectionView.bounds) - UIEdgeInsetsGetVerticalValue(self.collectionViewLayout.sectionInset) - UIEdgeInsetsGetVerticalValue(self.collectionView.adjustedContentInset));
-        return size;
-    }
-    return CGSizeMake(100, 100);
+    return CGSizeMake(88, 100);
 }
+
+- (void)reloadCollectionView {
+    [_collectionView reloadData];
+}
+
+
 
 @end

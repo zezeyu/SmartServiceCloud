@@ -9,7 +9,7 @@
 #import "UIView+HZUtil.h"
 
 @implementation UIView (HZUtil)
-@dynamic cornerRadius,bolderColor,bolderWidth;
+@dynamic cornerRadius,borderColor,borderWidth;
 -(void)addTapGestureTarget:(id)target action:(SEL)action{
     UITapGestureRecognizer* singleRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
     self.userInteractionEnabled = YES;
@@ -21,11 +21,11 @@
     self.layer.masksToBounds = YES;
 }
 
--(void)setBolderColor:(UIColor *)bolderColor{
+-(void)setBorderColor:(UIColor *)bolderColor{
     self.layer.borderColor = bolderColor.CGColor;
 }
 
--(void)setBolderWidth:(CGFloat)bolderWidth{
+-(void)setBorderWidth:(CGFloat)bolderWidth{
     self.layer.borderWidth = bolderWidth;
 }
 

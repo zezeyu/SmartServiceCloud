@@ -41,4 +41,6 @@ TODO: Add long description of the pod here.
    s.dependency 'HZOCLib'
    s.dependency 'HZHome'
    s.dependency 'HZMine'
+   s.dependency 'QMUIKit', '~> 4.4.3'
+   s.dependency 'HZThemeManager'
 end

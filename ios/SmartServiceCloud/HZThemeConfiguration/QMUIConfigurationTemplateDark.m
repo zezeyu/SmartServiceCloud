@@ -17,6 +17,8 @@
     
     QMUICMI.keyboardAppearance = UIKeyboardAppearanceDark;
     
+    QMUICMI.defaultStatusBarStyle = UIStatusBarStyleLightContent;
+    
     QMUICMI.navBarBackgroundImage = nil;
     QMUICMI.navBarStyle = UIBarStyleBlack;
     
@@ -66,11 +68,11 @@
 }
 
 - (UIColor *)themeTitleTextColor {
-    return UIColorDarkGray1;
+    return UIColorDarkGray5;
 }
 
 - (UIColor *)themeMainTextColor {
-    return UIColorDarkGray3;
+    return UIColorWhite;
 }
 
 - (UIColor *)themeDescriptionTextColor {
