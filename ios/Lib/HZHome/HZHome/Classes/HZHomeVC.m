@@ -43,12 +43,18 @@
         make.left.right.bottom.equalTo(self.view);
     }];
 }
-
+#pragma --mark 管家事件回调  我们可以拿到回调后,做一些对ui上的处理啥的
 -(void)loadManagerEventBlock{
     weakify(self);
     [[HZHomeVM instance]home_ManagerEvent_Block:^(home_ManagerEvent event) {strongify(self);
-        if (event == cycleScrollDataComplete) {
+        if (event == cycleScrollDataComplete) {//轮播图加载完成
             [self.homeView reloadData];
+        }
+        if (event == menuDataComplete) {//菜单数据加载完成
+            
+        }
+        if (event == recommendSongListComplete) {//歌单加载完成
+            
         }
     }];
 }

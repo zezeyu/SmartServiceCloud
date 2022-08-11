@@ -27,13 +27,15 @@
 -(void)loadData{
     HZHomeModel *model = [[HZHomeModel alloc]init];
     _imagesURLStrings = model.imagesURLStrings;
-    self.managerBlock(cycleScrollDataComplete);
+    self.managerBlock(cycleScrollDataComplete);//拿到了轮播图视图
     
     HZHomeModel *menuData = [HZHomeModel mj_objectWithKeyValues:[JSONUtil requestDataWithName:@"menuData"]];
     _menus = menuData.menuData;
+    self.managerBlock(menuDataComplete);
     
     HZHomeModel *songList = [HZHomeModel mj_objectWithKeyValues:[JSONUtil requestDataWithName:@"RecommendSongList"]];
     _recommendSongs = songList.songList;
+    self.managerBlock(recommendSongListComplete);
     
 }
 
