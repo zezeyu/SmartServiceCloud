@@ -11,8 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AppDelegate (launchOptions)
 
--(void)loadLoginVC;
--(void)loadMainTabBar;
 
 @end
 

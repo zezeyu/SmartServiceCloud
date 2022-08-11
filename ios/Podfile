@@ -2,30 +2,29 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 ENV['SWIFT_VERSION'] = '4' # 设置swift本地库的版本
 
-target 'SmartServiceCloud' do
-  config = use_native_modules!
-  flags = get_default_flags()
-  use_react_native!(
-    :path => config[:reactNativePath],
-    # to enable hermes on iOS, change `false` to `true` and then install pods
-    :hermes_enabled => flags[:hermes_enabled],
-    :fabric_enabled => flags[:fabric_enabled],
-    # An absolute path to your application root.
-    :app_path => "#{Pod::Config.instance.installation_root}/.."
-  )
-
-  use_frameworks!
-  pod 'HZFaceRecognition', :path => 'Lib/HZFaceRecognition', :modular_headers => true #人脸识别模块
+def main_frame
+  
+  #主题组件
+  pod 'HZThemeManager', :path => 'Lib/HZThemeManager', :modular_headers => true  # 主题配置
+  
+  #中间件
+  pod 'HZMedidator', :path=> 'Lib/HZMedidator' #很关键的中间件 用来组件之间，宿主之间的通信
+  
+  #通用组件（工具房，用户户口本）
   pod 'HZSwiftLib', :path => 'Lib/HZSwiftLib', :modular_headers => true
   pod 'HZOCLib', :path => 'Lib/HZOCLib', :modular_headers => true
-  pod 'HZThemeManager', :path => 'Lib/HZThemeManager', :modular_headers => true  # 主题配置
-  pod 'HZLogin', :path => 'Lib/HZLogin', :modular_headers => true #登录（人脸登录）
   pod 'HZUserManager', :path => 'Lib/HZUserManager', :modular_headers => true #管理用户数据、登录状态
-  pod 'HZMedidator', :path=> 'Lib/HZMedidator' #很关键的中间件 用来组件之间，宿主之间的通信
+  
+  #业务组件
   pod 'HZHome', :path=> 'Lib/HZHome' #主页
   pod 'HZMine', :path=> 'Lib/HZMine' #个人中心
   pod 'HZMain', :path=> 'Lib/HZMain' #tabBar
+  pod 'HZLogin', :path => 'Lib/HZLogin', :modular_headers => true #登录（人脸登录）
+  pod 'HZFaceRecognition', :path => 'Lib/HZFaceRecognition', :modular_headers => true #人脸识别模块
   
+end
+
+def third_sdk
   # Pods for SmartServiceCloud
   pod 'SDWebImage', '~> 5.13.0'
   pod 'MJRefresh', '~> 3.7.5'
@@ -39,13 +38,36 @@ target 'SmartServiceCloud' do
   pod 'SnapKit'
   pod 'SVGKit'
   pod 'SDCycleScrollView','>= 1.82'
-  
 #  pod 'RxSwift',    '~> 4.0'
 #  pod 'RxCocoa',    '~> 4.0'
 #  pod 'RxDataSources',    '~> 2.0.2'
 #  pod 'ObjectMapper'
 #  pod 'ReusableKit'
 #  pod 'Moya/RxSwift'
+end
+
+def react_native_module
+  ######RN需要的依赖
+  config = use_native_modules!
+  flags = get_default_flags()
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => flags[:hermes_enabled],
+    :fabric_enabled => flags[:fabric_enabled],
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+end
+
+target 'SmartServiceCloud' do
+  
+  react_native_module #react native
+
+  use_frameworks!
+  
+  main_frame #主框架
+  third_sdk #第三方SDK
 
   target 'SmartServiceCloudTests' do
     inherit! :search_paths
