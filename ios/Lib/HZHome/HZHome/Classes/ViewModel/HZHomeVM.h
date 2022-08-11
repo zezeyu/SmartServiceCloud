@@ -26,11 +26,6 @@ typedef enum : NSInteger {
     cycleScrollDataComplete = 0,//拿到轮播图
     menuDataComplete   = 1,//拿到了菜单数据
     recommendSongListComplete   = 2,//拿到了推荐歌单数据
-    addAllTileLayer   = 3,//添加所有瓦片图层
-    removeAllLayer    = 4,//清楚所有图层
-    initManageGraphicsOverlay = 5,//初始化管理用户图层
-    loadManagerServerLayer = 6,//添加管理用户网络数据
-    loadLayerComplete = 7,
 } home_ManagerEvent;
 typedef void (^homeManagerBlock)(home_ManagerEvent event);
 @interface HZHomeVM : NSObject
