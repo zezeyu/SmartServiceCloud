@@ -56,7 +56,7 @@
 
 -(SDCycleScrollView *)cycleScrollView{
     if (!_cycleScrollView) {
-        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero delegate:self placeholderImage:UIImageMake(@"placeholder")];
+        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero delegate:self placeholderImage:UIImageMake(@"placeholderImage")];
         _cycleScrollView.cornerRadius = MainCorner;
     }
     return _cycleScrollView;

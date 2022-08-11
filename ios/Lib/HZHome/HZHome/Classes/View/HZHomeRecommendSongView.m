@@ -7,6 +7,8 @@
 
 #import "HZHomeRecommendSongView.h"
 #import "HZRecommendSongCell.h"
+#define collectionHeight (200 * 0.8)
+#define collectionCellWidth (155 * 0.8)
 @interface HZHomeRecommendSongListCell()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property(nonatomic,strong)QMUILabel *recommendLabel;
@@ -55,7 +57,7 @@
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {strongify(self);
         make.top.mas_equalTo(self.recommendLabel.mas_bottom).offset(home_interval);
         make.left.right.mas_equalTo(@0);
-        make.height.mas_equalTo(@200);
+        make.height.mas_equalTo(collectionHeight);
         make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(-home_interval);
     }];
 }
@@ -76,7 +78,7 @@
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(155, 200);
+    return CGSizeMake(collectionCellWidth, collectionHeight);
 }
 
 -(QMUILabel *)recommendLabel{

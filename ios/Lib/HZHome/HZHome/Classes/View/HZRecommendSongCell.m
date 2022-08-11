@@ -8,6 +8,7 @@
 #import "HZRecommendSongCell.h"
 #import "HZHomeModel.h"
 #import <SDWebImage/SDWebImage.h>
+#define imageViewHeight (140 * 0.8)
 @interface HZRecommendSongCell()
 
 @property(nonatomic,strong)UIImageView *imageView;
@@ -33,7 +34,7 @@
     [_imageView mas_makeConstraints:^(MASConstraintMaker *make) {strongify(self);
         make.top.right.equalTo(self.contentView);
         make.left.mas_equalTo(@15);
-        make.height.mas_equalTo(@140);
+        make.height.mas_equalTo(imageViewHeight);
     }];
     
     [self.contentView addSubview:self.titleLabel];
@@ -46,7 +47,7 @@
 
 -(void)setModel:(HZHomeRecommendSondModel *)model{
     _model = model;
-    [_imageView sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:UIImageMake(@"")];
+    [_imageView sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:UIImageMake(@"placeholderImage")];
     _titleLabel.text = model.title;
 }
 
