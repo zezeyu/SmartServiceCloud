@@ -23,6 +23,7 @@
 		E13EC40E28A35663006DDFBC /* menuData.json in Resources */ = {isa = PBXBuildFile; fileRef = E13EC40D28A35663006DDFBC /* menuData.json */; };
 		E147B53C28A23BB800B660E6 /* hz_directory_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = E147B53A28A23BB800B660E6 /* hz_directory_icon.svg */; };
 		E147B53D28A23BB800B660E6 /* hz_microphone.svg in Resources */ = {isa = PBXBuildFile; fileRef = E147B53B28A23BB800B660E6 /* hz_microphone.svg */; };
+		E1553C5F28A49B6800AD3CD4 /* daitu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1553C5E28A49B6800AD3CD4 /* daitu.jpg */; };
 		E15DC71028A391CC005FA479 /* RecommendSongList.json in Resources */ = {isa = PBXBuildFile; fileRef = E15DC70F28A391CC005FA479 /* RecommendSongList.json */; };
 		E15FA98B289D51DE00E6BA56 /* QMUIConfigurationTemplateGrass.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FA97E289D51DE00E6BA56 /* QMUIConfigurationTemplateGrass.m */; };
 		E15FA98C289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FA980289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.m */; };
@@ -83,6 +84,7 @@
 		E13EC40D28A35663006DDFBC /* menuData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menuData.json; sourceTree = "<group>"; };
 		E147B53A28A23BB800B660E6 /* hz_directory_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hz_directory_icon.svg; sourceTree = "<group>"; };
 		E147B53B28A23BB800B660E6 /* hz_microphone.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hz_microphone.svg; sourceTree = "<group>"; };
+		E1553C5E28A49B6800AD3CD4 /* daitu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daitu.jpg; sourceTree = "<group>"; };
 		E15DC70F28A391CC005FA479 /* RecommendSongList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RecommendSongList.json; sourceTree = "<group>"; };
 		E15FA97E289D51DE00E6BA56 /* QMUIConfigurationTemplateGrass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateGrass.m; sourceTree = "<group>"; };
 		E15FA980289D51DE00E6BA56 /* QMUIConfigurationTemplateDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateDark.m; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				E13EC40D28A35663006DDFBC /* menuData.json */,
 				E15DC70F28A391CC005FA479 /* RecommendSongList.json */,
+				E1553C5E28A49B6800AD3CD4 /* daitu.jpg */,
 				E147B53A28A23BB800B660E6 /* hz_directory_icon.svg */,
 				E147B53B28A23BB800B660E6 /* hz_microphone.svg */,
 				E1D240D528A25D8B00146835 /* hz_calendar_icon.svg */,
@@ -371,6 +374,7 @@
 				E13EC40E28A35663006DDFBC /* menuData.json in Resources */,
 				E135B497288A4A4300BAB6D9 /* LaunchScreen.storyboard in Resources */,
 				E1D240DE28A25ED600146835 /* hz_livestreaming_icon.svg in Resources */,
+				E1553C5F28A49B6800AD3CD4 /* daitu.jpg in Resources */,
 				E15DC71028A391CC005FA479 /* RecommendSongList.json in Resources */,
 				E1D240E028A25F1800146835 /* hz_collection_icon.svg in Resources */,
 				E135B494288A4A4300BAB6D9 /* Assets.xcassets in Resources */,

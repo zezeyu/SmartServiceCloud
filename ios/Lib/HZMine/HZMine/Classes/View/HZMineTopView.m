@@ -73,7 +73,7 @@
 -(UIImageView *)imageView{
     if (!_imageView) {
         _imageView = [[UIImageView alloc]init];
-        _imageView.image = [UIImage getFaceImage];
+        _imageView.image = UIImageMake(@"daitu.jpg");
         _imageView.layer.masksToBounds = YES;
         _imageView.cornerRadius = 50;
         
