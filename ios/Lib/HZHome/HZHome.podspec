@@ -47,4 +47,5 @@ TODO: Add long description of the pod here.
    s.dependency 'MJExtension', '~> 3.4.1'
    s.dependency 'MJRefresh', '~> 3.7.5'
    s.dependency 'SDWebImage', '~> 5.13.0'
+   s.dependency 'React'
 end

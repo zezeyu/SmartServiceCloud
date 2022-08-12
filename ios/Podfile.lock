@@ -41,6 +41,7 @@ PODS:
     - MJExtension (~> 3.4.1)
     - MJRefresh (~> 3.7.5)
     - QMUIKit (~> 4.4.3)
+    - React
     - SDCycleScrollView (>= 1.82)
     - SDWebImage (~> 5.13.0)
   - HZLogin (0.1.0):
@@ -829,7 +830,7 @@ SPEC CHECKSUMS:
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 476ee3e89abb49e07f822b48323c51c57124b572
   HZFaceRecognition: eda0cbd99f44ecc53115c7e5844aabe66eb6875e
-  HZHome: 96f3d3466a7239910a343cc7be651e270a01eefe
+  HZHome: c00e9647836ac015b2cee051451a153d0840fc77
   HZLogin: be99aaa387731a85bb1d0df66b830bfb8db6d3f0
   HZMain: 15cb0addcaa7da200b7bed4c32ae2c3ee28d9541
   HZMedidator: c235e27b360d81210712f4f1d98fae3926088af0

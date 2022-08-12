@@ -8,6 +8,7 @@
 #import "HZHomeVC.h"
 #import "HZHomeVM.h"
 #import "HZHomeView.h"
+#import <React/RCTRootView.h>
 @interface HZHomeVC ()
 @property(nonatomic,strong)QMUINavigationButton *leftButton;//目录
 @property(nonatomic,strong)QMUINavigationButton *rightButton;//话筒
@@ -65,7 +66,27 @@
 
 #pragma --mark 方法实现
 -(void)onClickDirectory{
-    
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.31.79:8081/index.bundle?platform=ios"];
+        RCTRootView *rootView =
+          [[RCTRootView alloc] initWithBundleURL: jsCodeLocation
+                                      moduleName: @"RNHighScores"
+                               initialProperties:
+                                 @{
+                                   @"scores" : @[
+                                     @{
+                                       @"name" : @"Alex",
+                                       @"value": @"42"
+                                      },
+                                     @{
+                                       @"name" : @"Joel",
+                                       @"value": @"10"
+                                     }
+                                   ]
+                                 }
+                                   launchOptions: nil];
+        QDCommonViewController *vc = [[QDCommonViewController alloc] init];
+        vc.view = rootView;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 -(void)onClickMicrophone{
     

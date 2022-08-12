@@ -28,5 +28,16 @@
 	<string></string>
 	<key>NSRemindersUsageDescription</key>
 	<string>访问提醒事项</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>192.168.31.79</key>
+			<dict>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>
