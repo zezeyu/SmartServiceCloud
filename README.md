@@ -6,7 +6,7 @@ hello 这是我写的一个组件化架构，里面包含了主题化，react-na
 
 
 ### 效果图
-<img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fe2de41671e64477bc8758433ec8847f~tplv-k3u1fbpfcp-watermark.image?" width="375px" >
+<img src="/modularization.gif" width="375px" >
 
 ### 组件化构造
 
