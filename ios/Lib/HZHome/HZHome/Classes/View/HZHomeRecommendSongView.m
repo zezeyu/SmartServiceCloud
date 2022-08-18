@@ -16,7 +16,6 @@
 @property(nonatomic,strong)QMUIButton *moreButton;
 
 @property(nonatomic, strong) UICollectionView *collectionView;
-@property(nonatomic,strong)UIView *separatorView;
 
 @end
 
@@ -31,16 +30,7 @@
 }
 
 -(void)initUI{
-    [self.contentView addSubview:self.separatorView];
     weakify(self);
-    [_separatorView mas_makeConstraints:^(MASConstraintMaker *make) {strongify(self);
-        make.left.right.top.equalTo(self);
-        if ([self.reuseIdentifier isEqualToString:@"HZHomeRecommendSongListCell"]) {
-            make.height.mas_equalTo(@1);
-        }else{
-            make.height.mas_equalTo(@10);
-        }
-    }];
     [self.contentView addSubview:self.recommendLabel];
     [_recommendLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(home_interval);
@@ -118,13 +108,6 @@
         [self addSubview:_collectionView];
     }
     return _collectionView;
-}
--(UIView *)separatorView{
-    if (!_separatorView) {
-        _separatorView = [[UIView alloc]init];
-        _separatorView.backgroundColor = UIColor.qd_separatorColor;
-    }
-    return _separatorView;
 }
 
 @end

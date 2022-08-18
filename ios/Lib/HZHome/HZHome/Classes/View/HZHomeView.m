@@ -19,6 +19,7 @@
     if (self) {
         self.delegate = self;
         self.dataSource = self;
+        self.backgroundColor = UIColor.qd_separatorColor;
         self.rowHeight = UITableViewAutomaticDimension;
         self.estimatedRowHeight = cycleScrollViewHeight + 150;//预估高度而已
         [HZHomeVM instance].delegate = self;
@@ -27,7 +28,15 @@
     }
     return self;
 }
-
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return [UIView new];
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    if (section == 0) {
+        return 10;
+    }
+    return 0;
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
 }
@@ -62,6 +71,10 @@
                 cell = [[HZHomeRecommendSongListCell alloc] initForTableView:tableView withStyle:UITableViewCellStyleDefault reuseIdentifier:identifierNormal];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.cornerRadius = home_interval;
+            if (@available(iOS 11.0, *)) {
+                cell.layer.maskedCorners = QMUILayerMinXMaxYCorner | QMUILayerMaxXMaxYCorner;
+            }
             return cell;
         }
     }
@@ -73,6 +86,10 @@
                 cell = [[HZHomeRecommendSongListCell alloc] initForTableView:tableView withStyle:UITableViewCellStyleDefault reuseIdentifier:identifierNormal];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.cornerRadius = home_interval;
+            if (@available(iOS 11.0, *)) {
+                cell.layer.maskedCorners = QMUILayerMinXMinYCorner | QMUILayerMaxXMinYCorner;
+            }
             return cell;
         }
     }

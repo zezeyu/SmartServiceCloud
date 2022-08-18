@@ -6,7 +6,21 @@
     "start": "yarn react-native start"
   },
   "dependencies": {
+    "add": "^2.0.6",
+    "axios": "^0.27.2",
+    "cpclog": "^1.0.20",
+    "deep-freeze": "^0.0.1",
+    "dot-prop-immutable": "^2.1.1",
+    "events": "^3.3.0",
+    "hermes-engine": "^0.11.0",
+    "js-base64": "^3.7.2",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "moment": "^2.29.4",
     "react": "17.0.2",
-    "react-native": "0.68.2"
+    "react-native": "0.68.2",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
   }
 }
