@@ -1,51 +1,60 @@
-import React, { Component } from 'react'
-import { Platform, NativeModules, StyleSheet, View, AppState, Text, BackHandler, ScrollView } from "react-navite";
-import Utils from './src/common/utils';
+import * as React from 'react';
+import { View, Text, TouchableOpacity,Dimensions,Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-export default class App extends Component<Props> {
-  constructor(props) {
-    super(props);
-
-  }
-
-  _onNavigationStateChange = (prevState, newState) => {
-		this.currentRouteName = this._getCurrentRouteName(newState.routes[newState.index]);
-		logger.debug('_onNavigationStateChange ! currentRouteName : ', this.currentRouteName);
-	}
-
-  render() {
-    return (
-      <Provider store={store}>
-        <View style={styles.container}>
-          <AppContainer
-            ref={navigatorRef => {
-              Utils.setTopLevelNavigator(navigatorRef);
-            }}
-
-            onNavigationStateChange={this._onNavigationStateChange}
-          />
-          <Toast
-            ref={ref => {
-              Utils.setToastRef(ref);
-            }}
-            style={{ marginHorizontal: 20 }}
-            position='top'
-          />
-          <PopModal
-            ref={ref => {
-              Utils.setPopModalRef(ref);
-
-            }}></PopModal>
-
-        </View>
-      </Provider>
-    )
-  }
+function HomeScreen({navigation}) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <TouchableOpacity onPress={()=>navigation.navigate('Details')}>
+        <Text>Home Screen2</Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
+function DetailsScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Details Screen</Text>
+    </View>
+  );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  }
-});
+const Stack = createNativeStackNavigator();
+
+const options = {
+  title: '首页',
+  headerTintColor: '#fff',
+  headerTitleStyle: {
+    fontWeight: 'bold',
+  },
+  headerLeft: () => (
+    <Button
+      onPress={() => alert('This is a button!')}
+      title="返回"
+      color="#fff"
+    />
+  ),
+}
+const screenOptions={
+  headerStyle: {
+    backgroundColor: '#f4511e',
+  },
+  headerTintColor: '#fff',
+  headerTitleStyle: {
+    fontWeight: 'bold',
+  },
+}
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={screenOptions} initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} options={options}/>
+        <Stack.Screen name="Details" component={DetailsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;

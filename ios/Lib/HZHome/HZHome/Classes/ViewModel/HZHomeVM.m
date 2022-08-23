@@ -7,7 +7,8 @@
 
 #import "HZHomeVM.h"
 #import "HZHomeModel.h"
-
+#import "HZReactNativeVC.h"
+#import <React/RCTRootView.h>
 @implementation HZHomeVM
 
 + (instancetype)instance{
@@ -37,6 +38,25 @@
     _recommendSongs = songList.songList;
     self.managerBlock(recommendSongListComplete);
     
+}
+
++(void)goToReactPage{
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.8.100:8081/index.bundle?platform=ios"];
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"Home" initialProperties:@{@"scores" : @[
+                                     @{
+                                       @"name" : @"Alex",
+                                       @"value": @"42"
+                                      },
+                                     @{
+                                       @"name" : @"Joel",
+                                       @"value": @"10"
+                                     }
+                                   ]
+                                 }
+                                   launchOptions: nil];
+    HZReactNativeVC *vc = [[HZReactNativeVC alloc] init];
+    vc.view = rootView;
+    [[UIViewController currentViewController].navigationController pushViewController:vc animated:YES];
 }
 
 @end

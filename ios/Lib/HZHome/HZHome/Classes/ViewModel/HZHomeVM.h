@@ -50,6 +50,8 @@ typedef void (^homeManagerBlock)(home_ManagerEvent event);
 
 -(void)loadData;
 
++(void)goToReactPage;
+
 @end
 
 NS_ASSUME_NONNULL_END
